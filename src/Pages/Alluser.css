@@ -1,0 +1,23 @@
+.alluser{
+    background-color: #f4f4f4;
+    padding-top: 2rem;
+    /* padding-bottom: 2rem; */
+    height: 100%;
+}
+.alluser-data{
+    background-color: white;
+    padding: 24px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+}
+.data-enter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-data{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}

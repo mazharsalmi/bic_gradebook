@@ -1,0 +1,30 @@
+.grades{
+    background-color: #F4F5F7;
+    width: 100%;
+    height: 100vh;
+    height: 100%;
+}
+.data1{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+.data input {
+    padding: 5px 2px;
+}
+.student-grades{
+    background-color: white;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding: 24px;
+    margin-top: 5rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+}
+.sort{
+    background-color: rgb(125, 125, 223);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+}

@@ -1,0 +1,9 @@
+.aa .name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+}
+.name h3,p{
+    margin: 0%;
+    padding: 0%;
+}

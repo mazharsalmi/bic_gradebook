@@ -2,6 +2,7 @@
     width: 100% !important;
     background-color: #F4F5F7 !important;
     color: black !important;
+    box-shadow: none !important;
 }
 .date{
     display: flex;

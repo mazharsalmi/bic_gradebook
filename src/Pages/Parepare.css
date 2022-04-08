@@ -1,0 +1,35 @@
+.prepare{
+    background-color: #F4F5F7;
+    padding-bottom: 2rem;
+    height: 100%;
+    
+}
+.left-side-calendar{
+    padding: 16px;
+    border-left: 3px solid blue;
+    background-color: white;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 2rem;
+}
+.left-side-calendar p{
+    margin-bottom: 8px;
+}
+.right-side-calendar{
+    padding: 16px;
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+
+}
+.Filter-board{
+    padding: 16px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+       
+}
+.cheack-box{
+    display: flex;
+    align-items: center;
+}

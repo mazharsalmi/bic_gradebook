@@ -1,5 +1,6 @@
 .data{
     background-color: #f4f4f4;
+    height: 100%;
 }
 .feacter button{
     margin: 0.5rem;
@@ -17,4 +18,281 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     height: 160px;
+    color: white;
+    display: flex;
+}
+.total-student h4 ,p ,h2{
+    padding-top: 1rem;
+    margin: 0rem 0rem 0rem 1rem;
+    margin-left: 1rem;
+}
+.stuentright{
+    padding: 0rem 1rem;
+    
+
+}
+.stuentright img{
+    width: 10rem;
+    margin-top: 5rem;
+}
+.total-program{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.total-program h6,p{
+    margin: 0%;
+    padding: 1rem;
+}
+.total-program img{
+    width: 4rem;
+    height: 4rem;
+}
+.perfromance{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 24px;
+}
+.perfromance-text{
+    display: flex;
+    justify-content: space-between;
+}
+.p-leftside h4{
+    margin: 0%;
+}
+.p-leftside h5{
+    margin: 10px 0px;
+    color: #8c8c8c;
+}
+.p-rightside{
+    display: flex;
+    padding: 5px;
+    
+}
+.p-rightside li{
+    margin-right: 5px;
+}
+.perfromance img {
+    width: 100%;
+    height: 10.5rem;
+}
+.Market-Overview{
+    background-color: white;
+    border-radius: 5px;
+    padding: 24px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 1rem;
+}
+.Market-Overview img{
+    width: 100%;
+    height: 10rem;
+}
+.market-text{
+    display: flex;
+    justify-content: space-between;
+}
+.market-text h4 ,p{
+    padding-left: 0%;
+    margin: 0%;
+}
+.dolor{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.dolor-left{
+    display: flex;
+}
+.dolor-right{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.dolor-right li{
+    margin-right: 0.5rem;
+
+}
+.todo{
+    background-color: white;
+    border-radius: 5px;
+    padding: 24px;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+.todo p{padding-top: 0%;}
+.todo-list{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.todo-list button{
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+}
+.date-list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.finsh{
+    background-color: #FAD480;
+    border-radius: 5px;
+    padding: 3px;
+}
+.Enhance{
+    background-image: url(../images/background.jpg);
+    position: relative;
+    top: -4rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 24px;
+    border-radius: 5px;
+    color: white;
+}
+.Enhance h2{
+    margin-left: 0rem;
+    padding: 1rem 0rem;
+    font-size: 28px;
+}
+.Enhance button{
+    padding: 10px 3px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.circul-chart{
+    background-color: white;
+
+    margin-right: 0.5rem;
+    padding: 24px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+ul {
+    display: flex;
+
+}
+ul li{
+    padding: 1rem;
+    margin-left: 10px;
+}
+.request{
+    background-color:white;
+    margin: 0rem 0.5rem;
+    border-radius: 5px;
+    padding: 24px;
+    position: relative;
+    top: -24rem;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Leave-Report{
+    background-color: white;
+    padding: 24px;
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+ a{
+    text-decoration: underline;
+
+}
+.Leave-Report img{
+    margin-top: 1rem;
+    width: 100%;
+}
+.leave-head{
+    display: flex;
+    justify-content: space-between;
+}
+.recent{
+    background-color: white;
+    padding: 24px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    position: relative;
+    top: -23rem;
+}
+.date-event{
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    margin-bottom: 1rem;
+}
+.Activities{
+    background-color: white;
+    padding: 24px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    position: relative;
+    top: -23rem;
+}
+.Activities-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0rem;
+}
+.top-performer{
+    background-color: white;
+    padding: 24px;
+    margin-right: 0.5rem;
+    position: relative;
+    top: -19rem;
+    border-radius: 5px;
+}
+.clint-left{
+    display: flex;
+    align-items: center;
+}
+.name{
+    margin-left: 5px;
+}
+.name h6{
+    margin: 0%;
+}
+.name p{
+    margin-top: 9px;
+}
+.clint{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.piegraph{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.line-graph{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
 }

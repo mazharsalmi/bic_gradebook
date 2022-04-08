@@ -3,6 +3,10 @@
     color: #ffffff;
     height: auto;
     width: 220px;
+    transition:  0.1s linear ;
+}
+main{
+    width: 100%;
 }
 .main{
     display: flex;
@@ -32,12 +36,26 @@ a{
     color: white;
     gap: 10px;
     /* justify-content: space-between; */
+    /* text-align: center; */
+    padding: 10px 35px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12.92px;
+    font-family: "Manrope", sans-serif;
+}
+
+.mobile-link {
+    color: white;
+    gap: 10px;
+    /* justify-content: space-between; */
     text-align: center;
-    padding: 20px 35px;
+    padding: 10px 8px;
     padding: auto;
     align-items: center;
     font-weight: bold;
+    
 }
 .link:hover{
     border-left: 2px solid white;
+    transform: 2s;
 }

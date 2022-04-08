@@ -1,0 +1,23 @@
+.classes{
+    background-color: #f4f4f4;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: 100%;
+}
+.class-list{
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 16px;
+    
+}
+.class-list h4{
+    margin: 0%;
+}
+.class-list Button{
+    color: blueviolet;
+    border: 1px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
