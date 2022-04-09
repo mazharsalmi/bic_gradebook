@@ -10,6 +10,7 @@ import chart from "../images/chart.png";
 import graph from "../images/graph-chart.png";
 import month from "../images/month-chart.png";
 import Checkbox from "@mui/material/Checkbox";
+import { Box } from "@mui/system";
 import bg from "../images/background.jpg";
 import circul from "../images/circle-chart.png";
 import Tabel from "../Components/Tabel";
@@ -94,64 +95,64 @@ export default function Dashbord() {
   return (
     <div className="data">
       <div className="feacter">
-        <button>
+        <button className="avc">
           <ShareIcon />
           Share
         </button>
-        <button>
+        <button className="avc">
           <PrintIcon />
           Print
         </button>
-        <button>
+        <button className="avc" style={{ background: "blue", color: "wheat" }}>
           <SendToMobileIcon />
           Export
         </button>
       </div>
       <Divider />
       <Grid container spacing={2}>
-        <Grid item xs={2} md={2}>
+        <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
             <h1>32.53%</h1>
             <p>-0.5%</p>
           </div>
         </Grid>
-        <Grid item xs={2} md={2}>
+        <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
             <h1>32.53%</h1>
             <p>-0.5%</p>
           </div>
         </Grid>
-        <Grid item xs={2} md={2}>
+        <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
             <h1>32.53%</h1>
             <p>-0.5%</p>
           </div>
         </Grid>
-        <Grid item xs={2} md={2}>
-          <div className="prestange">
+        <Grid item xs={4} md={2}>
+          <div className="prestange student-responsive">
             <p>Total Students</p>
             <h1>32.53%</h1>
             <p>-0.5%</p>
           </div>
         </Grid>
-        <Grid item xs={2} md={2}>
-          <div className="prestange">
+        <Grid item xs={4} md={2}>
+          <div className="prestange student-responsive">
             <p>Total Students</p>
             <h1>32.53%</h1>
             <p>-0.5%</p>
           </div>
         </Grid>
-        <Grid item xs={2} md={2}>
-          <div className="prestange">
+        <Grid item xs={4} md={2}>
+          <div className="prestange student-responsive">
             <p>Total Students</p>
             <h1>32.53%</h1>
             <p>-0.5%</p>
           </div>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <div className="total-student">
             <div className="stuentleft">
               <h4>Total Students</h4>
@@ -159,19 +160,20 @@ export default function Dashbord() {
               <h2>357c</h2>
             </div>
             <div className="stuentright">
-            <div className="line-graph">
-            <ResponsiveContainer width={200} aspect={3}>
-            <LineChart data={pdata}>
-              <Line type="monotone" dataKey="student" stroke="red" />
-            </LineChart>
-          </ResponsiveContainer>
-          </div>
-
+              <div className="line-graph">
+                <ResponsiveContainer width={200} aspect={3}>
+                  <LineChart data={pdata}>
+                    <Line type="monotone" dataKey="student" stroke="red" />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
             </div>
           </div>
           <div className="total-program">
-            <div >
-              <PieChart width={100} height={100}>
+            <Box className='graph-responsive'>
+            <div>
+            <ResponsiveContainer width="100%" height={100}>
+              <PieChart >
                 <Pie
                   data={data}
                   dataKey="uv"
@@ -181,13 +183,17 @@ export default function Dashbord() {
                   fill="#8884d8"
                 />
               </PieChart>
+              </ResponsiveContainer>
             </div>
             <div className="text">
               <h6>Total Program</h6>
               <p>26.28%</p>
             </div>
-            <div >
-              <PieChart width={100} height={100}>
+            </Box>
+            <Box className='graph-responsive'>
+             <div>
+             <ResponsiveContainer width="100%" height={100}>
+              <PieChart >
                 <Pie
                   data={data}
                   dataKey="uv"
@@ -197,14 +203,16 @@ export default function Dashbord() {
                   fill="#8884d8"
                 />
               </PieChart>
+              </ResponsiveContainer>
             </div>
             <div className="text">
               <h6>Total Program</h6>
               <p>26.28%</p>
             </div>
+            </Box>
           </div>
         </Grid>
-        <Grid item xs={8} md={8}>
+        <Grid item xs={12} md={8}>
           <div className="perfromance">
             <div className="perfromance-text">
               <div className="p-leftside">
@@ -217,7 +225,7 @@ export default function Dashbord() {
               </div>
             </div>
             <div className="chart">
-              <ResponsiveContainer width="100%" aspect={3}>
+              <ResponsiveContainer width="100%" height="100%" aspect={3}>
                 <LineChart data={pdata}>
                   <XAxis dataKey="name" interval={"preserveStartEnd"} />
                   <YAxis />
@@ -228,7 +236,7 @@ export default function Dashbord() {
             </div>
           </div>
         </Grid>
-        <Grid item xs={8} md={8}>
+        <Grid item xs={12} md={8}>
           <div className="Market-Overview">
             <div className="market-text">
               <div className="market-left">
@@ -250,16 +258,18 @@ export default function Dashbord() {
                 <li>last week</li>
               </div>
             </div>
-            <div>
-              <BarChart width={700} height={200} data={data}>
+            <div >
+            <ResponsiveContainer width="100%" aspect={3}>
+              <BarChart  data={data}>
                 <XAxis dataKey="name" />
                 <YAxis dataKey="uv" />
                 <Bar dataKey="uv" fill="#8884d8" />
               </BarChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <div className="todo">
             <div className="todo-list">
               <h4>Todo List</h4>
@@ -311,27 +321,27 @@ export default function Dashbord() {
             </div>
           </div>
         </Grid>
-        <Grid item xs={8} md={8}>
+        <Grid item xs={12} md={8}>
           <div className="Enhance">
             <h2>Enhance your Campaign for better outreach</h2>
             <Button variant="contained">Upgrade Account</Button>
           </div>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <div className="circul-chart">
             <h2>Type By Amount</h2>
-            <div className="piegraph" >
-            <PieChart width={100} height={100}>
-              <Pie
-                data={data}
-                dataKey="uv"
-                cx="50%"
-                cy="50%"
-                outerRadius={50}
-                fill="#8884d8"
-              />
-            </PieChart>
-          </div>
+            <div className="piegraph">
+              <PieChart width={100} height={100}>
+                <Pie
+                  data={data}
+                  dataKey="uv"
+                  cx="50%"
+                  cy="50%"
+                  outerRadius={50}
+                  fill="#8884d8"
+                />
+              </PieChart>
+            </div>
             <ul>
               <li>Total</li>
               <li>Net</li>
@@ -340,7 +350,7 @@ export default function Dashbord() {
             </ul>
           </div>
         </Grid>
-        <Grid item xs={8} md={8}>
+        <Grid item xs={12} md={8}>
           <div className="request">
             <div className="head">
               <div className="head-left">
@@ -358,22 +368,24 @@ export default function Dashbord() {
             <Tabel />
           </div>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <div className="Leave-Report">
             <div className="leave-head">
               <h3>Leave Report</h3>
               <Button variant="contained">Month wise</Button>
             </div>
             <div>
-              <BarChart width={300} height={200} data={data}>
+            <ResponsiveContainer width="100%" height={300}>
+              <BarChart  data={data}>
                 <XAxis dataKey="name" interval={"preserveStartEnd"} />
 
                 <Bar dataKey="uv" fill="#8884d8" />
               </BarChart>
+              </ResponsiveContainer>
             </div>
           </div>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <div className="recent">
             <h3>Recent Events</h3>
             <div className="event">
@@ -420,7 +432,7 @@ export default function Dashbord() {
             </a>
           </div>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <div className="Activities">
             <div className="Activities-head">
               <h3>Activities</h3>
@@ -477,7 +489,7 @@ export default function Dashbord() {
             </li>
           </div>
         </Grid>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
           <div className="top-performer">
             <h3>Top Performer</h3>
             <div className="clint">

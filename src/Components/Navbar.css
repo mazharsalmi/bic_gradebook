@@ -3,18 +3,36 @@
     background-color: #F4F5F7 !important;
     color: black !important;
     box-shadow: none !important;
+    
+}
+.responsive-bar{
+    display: flex;
+    justify-content: space-between;
 }
 .date{
     display: flex;
-    justify-content: center;
-    text-align: center;
+    justify-content: center; 
     align-items: center;
-
+    padding: 4px 15px;
+    border-radius: 5px;
     background-color: white;
-    border: 1px solid black;
-    border-radius: 0.5rem;
+    border: 1px solid black;    
     color: black;
-    padding: 0rem 1rem;
+    font-size: 16px;
+}
+.nav-right-icon{
+    padding: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-img{
+    margin: 0px 5px;
+}
+.select{
+    padding: 8px 15px;
+    margin-right: 1rem;
+    border-radius: 5px;
 }
 .name-of-user p{
     margin: 0rem;
@@ -24,4 +42,46 @@
     padding: 0.5rem;
    
     align-items: center;
+}
+.select-date{
+    display: flex;
+}
+.aavatar{
+    display: none;
+}
+.left-side-navbar{
+    display: flex;
+    align-items: center;
+}
+.left-side-navbar .aavatar{
+    display: none;
+}
+.nav-right-icon .menu-icon{
+    display: none;
+}
+
+.nav-right-icon .right-avater{
+    display: block;
+}
+
+@media (max-width:900px) {
+    .select-date{
+        display: none;
+    }
+    .left-side-navbar .aavatar{
+        display: block;
+    }
+    .name-of-user{
+        display: none;
+    }
+    .responsive-bar{
+        justify-content: space-between;
+    }
+    .nav-right-icon .menu-icon{
+        display: block;
+    }
+    .nav-right-icon .right-avater{
+        display: none;
+    }
+    
 }

@@ -18,7 +18,7 @@ function App() {
       <Navbar/>
       <Routes>
           <Route path="/" element={<Dashbord />} />
-          <Route path="none" element={<Grades />} />
+          <Route path="/grades" element={<Grades />} />
           <Route path="/prepare" element={<Prepare />} />
           <Route path="/class" element={<Classes/>}/>
           <Route path="/subjects" element={<Subject/>}/>

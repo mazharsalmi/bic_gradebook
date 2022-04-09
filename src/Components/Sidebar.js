@@ -20,7 +20,7 @@ const routes = [
     icon: <GridViewIcon />,
   },
   {
-    path: 'none',
+    path: '/gradbook',
     name: 'GRADEBOOK'
   },
   {

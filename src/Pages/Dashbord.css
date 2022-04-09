@@ -1,13 +1,23 @@
 .data{
     background-color: #f4f4f4;
     height: 100%;
+    padding: 24px;
 }
-.feacter button{
+.feacter {
+    display: flex;
+    
+}
+button.avc{
     margin: 0.5rem;
+    align-items: center;
+    padding: 4px 8px;
+    margin: 0.5rem 0.2rem;
+    display: flex;
     align-items: center;
 }
 .prestange{
     margin: 0rem 0.5rem;
+    padding: 24px;
 }
 .prestange h1 {
     margin: 0rem;
@@ -31,10 +41,8 @@
     
 
 }
-.stuentright img{
-    width: 10rem;
-    margin-top: 5rem;
-}
+
+
 .total-program{
     display: flex;
     justify-content: space-evenly;
@@ -49,10 +57,7 @@
     margin: 0%;
     padding: 1rem;
 }
-.total-program img{
-    width: 4rem;
-    height: 4rem;
-}
+
 .perfromance{
     background-color: white;
     border-radius: 5px;
@@ -90,6 +95,11 @@
     margin-left: 8px;
     margin-right: 8px;
     margin-top: 1rem;
+}
+.Market-Overview p{
+    font-weight: 400;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
 }
 .Market-Overview img{
     width: 100%;
@@ -159,7 +169,7 @@
 .Enhance{
     background-image: url(../images/background.jpg);
     position: relative;
-    top: -4rem;
+    top: -2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     padding: 24px;
@@ -194,13 +204,14 @@ ul li{
     padding: 1rem;
     margin-left: 10px;
 }
+.text p{padding: 16px;}
 .request{
     background-color:white;
     margin: 0rem 0.5rem;
     border-radius: 5px;
     padding: 24px;
     position: relative;
-    top: -24rem;
+    top: -10rem;
 }
 .head{
     display: flex;
@@ -233,7 +244,7 @@ ul li{
     margin-right: 0.5rem;
     border-radius: 5px;
     position: relative;
-    top: -23rem;
+    top: -10rem;
 }
 .date-event{
     display: flex;
@@ -248,7 +259,7 @@ ul li{
     margin-right: 0.5rem;
     border-radius: 5px;
     position: relative;
-    top: -23rem;
+    top: -10rem;
 }
 .Activities-head{
     display: flex;
@@ -265,12 +276,13 @@ li{
     padding: 24px;
     margin-right: 0.5rem;
     position: relative;
-    top: -19rem;
+    top: -27rem;
     border-radius: 5px;
 }
 .clint-left{
     display: flex;
     align-items: center;
+    padding: 0.5rem;
 }
 .name{
     margin-left: 5px;
@@ -295,4 +307,84 @@ li{
     display: flex;
     justify-content: center;
     padding-top: 4rem;
+}
+
+@media (max-width:900px) {
+    .graph-responsive-market{
+        width:'200';
+         height:'200';
+    }
+
+    .student-responsive{
+        display: none;
+    }
+    .prestange{
+        padding-left: 0%;
+    }
+    .prestange h1{
+        font-size: 18px;
+    }
+    .total-student{
+        flex-direction: column;
+    }
+    .line-graph{
+        padding: 0rem;
+    }
+    .total-program{
+        flex-direction: column;
+    }
+    .graph-responsive{
+        flex-direction: column;
+        
+        justify-content: space-between;
+    }
+    .market-text{
+        flex-direction: column;
+    }
+    .dolor{
+        flex-direction: column;
+        text-align: start;
+        align-items: flex-start;
+    }
+    .dolor-left{
+        flex-direction: column;
+        text-align: start;
+    }
+    .dolor-left h4{
+        margin: 0%;
+    }
+    .dolor-left h2{
+        padding-left: 0% !important;
+        margin-left: 0%;
+    }
+    .request{
+        top: 0rem;
+    }
+    ul{
+        padding: 0%;
+        width: 100%;
+    }
+    ul li{
+        font-size: 10px;
+        padding: 0%;
+        justify-content: center;
+    }
+    .head{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .head-left p{
+        font-size: 12px;
+    }
+    .head Button{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+    .recent .Activities {
+        top: 0rem;
+    }
+    .top-performer{
+        top: 0rem;
+    }
 }
