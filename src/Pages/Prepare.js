@@ -7,7 +7,7 @@ export default function Prepare() {
   return (
     <div className='prepare'>
     <Grid container spacing={2} pt='3rem'>
-        <Grid item xs={4} md={4}>
+        <Grid item xs={12} md={4}>
         <div className='left-side-calendar'>
         <p>Deciphering Marketing Lingo For Small Business Owners
         </p>
@@ -44,7 +44,7 @@ export default function Prepare() {
         </div>
         </Grid>
         
-        <Grid item xs={8} md={8}>
+        <Grid item xs={12} md={8}>
         <div className='right-side-calendar'>
         <Calendar/>
         </div>

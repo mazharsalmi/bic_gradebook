@@ -2,6 +2,8 @@
     background-color: #f4f4f4;
     height: 100%;
     padding: 24px;
+    margin-top: 7rem;
+    font-family: "Manrope", sans-serif;
 }
 .feacter {
     display: flex;
@@ -23,7 +25,7 @@ button.avc{
     margin: 0rem;
 }
 .total-student{
-    background-color: blue;
+    background-color: rgb(71, 71, 152);
     border-radius: 5px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -196,6 +198,13 @@ button.avc{
     flex-direction: column;
     justify-content: center;
 }
+.circul-chart ul{
+    padding-left: 0%;
+}
+.circul-chart ul li{
+    padding-left: 0%;
+    margin-left: 0%;
+}
 ul {
     display: flex;
 
@@ -313,6 +322,9 @@ li{
     .graph-responsive-market{
         width:'200';
          height:'200';
+    }
+    .data{
+        margin-top: 3rem;
     }
 
     .student-responsive{

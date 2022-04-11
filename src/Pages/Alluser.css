@@ -3,6 +3,8 @@
     padding-top: 2rem;
     /* padding-bottom: 2rem; */
     height: 100%;
+    margin-top: 6rem;
+    font-family: "Manrope", sans-serif;
 }
 .alluser-data{
     background-color: white;
@@ -20,4 +22,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
+}
+@media (max-width:900px) {
+    .alluser{
+        margin-top: 3rem;
+    }   
+    
 }

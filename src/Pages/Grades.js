@@ -12,11 +12,15 @@ export default function Grades() {
         <div className='student-grades'>
         <h3>Enter Student Grades</h3>
         <div className='data1'>
+        <div className='label1'>
         <label>Select University:</label>
         <input placeholder='University of London'></input>
+        </div>
+        <div className='label1'>
         <label>Select University:</label>
         <input placeholder='University of London'></input>
         <div className='sort'>Sort</div>
+        </div>
         </div>
         <GradeEnter/>
         </div>

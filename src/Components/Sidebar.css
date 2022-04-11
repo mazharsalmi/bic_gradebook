@@ -4,9 +4,14 @@
     height: auto;
     width: 220px;
     transition:  0.1s linear ;
+    position: sticky;
+    z-index: 100;
+    font-family: "Manrope", sans-serif;
 }
 main{
     width: 100%;
+    position: relative;
+    z-index: 99;
 }
 .main{
     display: flex;

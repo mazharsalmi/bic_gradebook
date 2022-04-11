@@ -2,6 +2,8 @@
     background-color: #F4F5F7;
     padding-bottom: 2rem;
     height: 100%;
+    margin-top: 6rem;
+    font-family: "Manrope", sans-serif;
     
 }
 .left-side-calendar{
@@ -32,4 +34,10 @@
 .cheack-box{
     display: flex;
     align-items: center;
+}
+@media (max-width:900px) {
+    .prepare{
+        margin-top: 2rem;
+    }   
+    
 }

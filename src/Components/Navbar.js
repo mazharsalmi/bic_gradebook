@@ -1,8 +1,16 @@
-import * as React from "react";
+import React, { useState , useEffect , Container} from "react";
+import { motion } from "framer-motion";
+
+import navbar from "../Components/Navbar.css";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
+import GridViewIcon from "@mui/icons-material/GridView";
+import MessageIcon from "@mui/icons-material/Message";
+import AutoGraphIcon from "@mui/icons-material/AutoGraph";
+import PersonIcon from "@mui/icons-material/Person";
+import ListIcon from "@mui/icons-material/List";
 
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
@@ -13,8 +21,9 @@ import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined
 import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
 import DateRangeIcon from "@mui/icons-material/DateRange";
-import Navbar from "../Components/Navbar.css";
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink } from "react-router-dom";
+import logo from "../images/logowhite.png";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -58,16 +67,161 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
+const routes = [
+  {
+    path: "/",
+    name: "DashBoard",
+    icon: <GridViewIcon />,
+  },
+  {
+    path: "/gradbook",
+    name: "GRADEBOOK",
+  },
+  {
+    path: "/grades",
+    name: "Grades Entry",
+    icon: <MessageIcon />,
+  },
+  {
+    path: "/prepare",
+    name: "Prepare Result",
+    icon: <DateRangeIcon />,
+  },
+  {
+    path: "/reporting",
+    name: "Reporting",
+    icon: <AutoGraphIcon />,
+  },
+  {
+    path: "/timetable",
+    name: "TIMETABLE",
+  },
+  {
+    path: "/teachertiming",
+    name: "Teacher Timetable",
+    icon: <MessageIcon />,
+  },
+  {
+    path: "/studenttiming",
+    name: "Student Timetable",
+    icon: <DateRangeIcon />,
+  },
+  {
+    path: "/setup",
+    name: "SETUP",
+  },
+  {
+    path: "/class",
+    name: "Class",
+    icon: <PersonIcon />,
+  },
+  {
+    path: "/subjects",
+    name: "Subjects",
+    icon: <PersonIcon />,
+  },
+  {
+    path: "/exam",
+    name: "Exams Setup",
+    icon: <ListIcon />,
+  },
+  {
+    path: "/unlivesities",
+    name: "Unlivesities",
+    icon: <PersonIcon />,
+  },
+  {
+    path: "/administration",
+    name: "ADMINISTRATION",
+  },
+  {
+    path: "/usergroup",
+    name: "User Groups",
+    icon: <MessageIcon />,
+  },
+  {
+    path: "/menuassignation",
+    name: "Menu Assignation",
+    icon: <DateRangeIcon />,
+  },
+  {
+    path: "/allusers",
+    name: "All Users",
+    icon: <ListIcon />,
+  },
+];
 
-export default function SearchAppBar() {
- 
-  const handleClick = () => {
-  console.log('hello')
-}
+export default function SearchAppBar({ children }) {
+  const [show, setShow] = useState(false);
+
+  const handleClicks = () => {
+    setShow(!show);
+  };
+  const [name ,setName] =useState(false);
+  function hideName(){
+    if(window.scrollY >=90){
+      setName(true)
+
+    }else{
+      setName(false)
+    }
+  }
+  const [color , setColor]=useState(false) 
+  function chaingColor(){
+    if (window.scrollY >=90){
+      setColor(true)
+    }else{
+      setColor(false)
+    }
+  }
+  window.addEventListener('scroll', hideName)
+  window.addEventListener('scroll' , chaingColor)
+  useEffect(() => {
+    window.scrollBy(0, 0)
+  }, [])
   return (
     <Box>
-      <AppBar position="static" className="appbar">
-        <Toolbar className="responsive-bar">
+      {show ? (
+        <div>
+          <div className="main" style={{ position: "relative" }}>
+            <motion.div
+              animate={{ width: "250px" }}
+              className="sidebar-mobile"
+              style={{
+                position: "absolute",
+                right: "0",
+                top: "4rem",
+                zIndex: "99",
+                backgroundColor: "black",
+              }}
+            >
+              <div className="top_section">
+                <MenuIcon
+                  className="menu-icon nav-img"
+                  onClick={handleClicks}
+                />
+                <img src={logo} alt="logo" />
+              </div>
+              <section className="routes">
+                {routes.map((route) => (
+                  <NavLink to={route.path} key={route.name} className="link">
+                    <div className="icon">{route.icon}</div>
+                    <div className="link_text">{route.name}</div>
+                  </NavLink>
+                ))}
+              </section>
+            </motion.div>
+
+            <main>{children}</main>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
+
+      <AppBar position="fixed">
+      
+        <Toolbar   className={ color ? 'responsive-bar header-bg' : 'responsive-bar'}>
           <Typography
             variant="h6"
             noWrap
@@ -75,7 +229,8 @@ export default function SearchAppBar() {
             className="left-side-navbar"
           >
             <Avatar className="aavatar" />
-            <div className="name-of-user">
+
+            <div className={name ? 'name-of-user header' : 'name-of-user'}>
               <h3>
                 <span style={{ color: "blue" }}>Good Morning,</span> Salman
                 Naqvi
@@ -113,9 +268,10 @@ export default function SearchAppBar() {
             <MailOutlineOutlinedIcon className="nav-img" />
             <NotificationsOutlinedIcon className="nav-img" />
             <Avatar alt="" src="" className="nav-img right-avater" />
-            <MenuIcon className="menu-icon nav-img" onClick={handleClick}/>
+            <MenuIcon className="menu-icon nav-img" onClick={handleClicks} />
           </div>
         </Toolbar>
+        
       </AppBar>
     </Box>
   );

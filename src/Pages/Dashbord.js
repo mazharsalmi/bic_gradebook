@@ -103,7 +103,7 @@ export default function Dashbord() {
           <PrintIcon />
           Print
         </button>
-        <button className="avc" style={{ background: "blue", color: "wheat" }}>
+        <button className="avc" style={{ background: " rgb(71, 71, 152)", color: "wheat" }}>
           <SendToMobileIcon />
           Export
         </button>

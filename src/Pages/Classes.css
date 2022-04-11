@@ -3,6 +3,8 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
     height: 100%;
+    margin-top: 6rem;
+    font-family: "Manrope", sans-serif;
 }
 .class-list{
     background-color: white;
@@ -20,4 +22,10 @@
     border: 1px solid black;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+@media (max-width:900px) {
+    .classes{
+        margin-top: 3rem;
+    }
+    
 }
