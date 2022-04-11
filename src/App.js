@@ -10,10 +10,12 @@ import Classes from "./Pages/Classes";
 import Subject from "./Pages/Subject";
 import Alluser from "./Pages/Alluser";
 import MenuAssign from "./Pages/MenuAssign";
+import ScrollToTop from "./Components/ScroolBar"
 
 function App() {
   return (
     <div className="app">
+    <ScrollToTop />
       <Sidebar>
       <Navbar/>
       <Routes>
