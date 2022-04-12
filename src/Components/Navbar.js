@@ -24,7 +24,7 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logowhite.png";
-import DatePickers from "../Table/Calendar"
+import Date from "../Table/Date"
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -252,7 +252,7 @@ export default function SearchAppBar({ children }) {
               <option value="3">Three</option>
             </select>
             <div className="date">
-            <DatePickers/>
+            <Date/>
             </div>
           </Box>
           <Search>
