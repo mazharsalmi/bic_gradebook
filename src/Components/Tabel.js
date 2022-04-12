@@ -14,27 +14,28 @@ import Slider from '@mui/material/Slider';
 export default function BasicTable() {
   return (
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650 }} aria-label="simple table" className='table'>
         <TableHead>
           <TableRow>
-            <TableCell><Checkbox/>CUSTOMER</TableCell>
-            <TableCell >COMPONY</TableCell>
-            <TableCell >PROGRESS</TableCell>
-            <TableCell >STATUS</TableCell>
+            <TableCell className='th'><Checkbox/>CUSTOMER</TableCell>
+            <TableCell  className='th' >COMPONY</TableCell>
+            <TableCell  className='th'>PROGRESS</TableCell>
+            <TableCell  className='th' >STATUS</TableCell>
         
           </TableRow>
         </TableHead>
         <TableBody>
-        <TableRow>
-            <TableCell style={{display:'flex' ,alignItems:'center'}} className='aa'><Checkbox style={{margin:'5px'}}/><Avatar style={{margin:'5px'}}/>
+        <TableRow className='row-table'>
+            <TableCell style={{display:'flex' ,alignItems:'center'}} className='aa'>
+            <Checkbox style={{margin:'5px'}}/><Avatar style={{margin:'5px'}}/>
             <div className='name'>
-            <h3>Brandon Washington</h3>
+            <h6>Brandon Washington</h6>
             <p>Head admin</p>
             </div>
             </TableCell>
             <TableCell style={{paddingLeft:'0rem'}}>
             <div className='name'>
-            <h3>Company name 1</h3>
+            <h6>Company name 1</h6>
             <p>company type</p>
             </div>
             </TableCell>
@@ -52,13 +53,13 @@ export default function BasicTable() {
           <TableRow>
             <TableCell style={{display:'flex' ,alignItems:'center'}} className='aa'><Checkbox style={{margin:'5px'}}/><Avatar style={{margin:'5px'}}/>
             <div className='name'>
-            <h3>Brandon Washington</h3>
+            <h6>Brandon Washington</h6>
             <p>Head admin</p>
             </div>
             </TableCell>
             <TableCell style={{paddingLeft:'0rem'}}>
             <div className='name'>
-            <h3>Company name 1</h3>
+            <h6>Company name 1</h6>
             <p>company type</p>
             </div>
             </TableCell>
@@ -75,37 +76,13 @@ export default function BasicTable() {
           <TableRow>
             <TableCell style={{display:'flex' ,alignItems:'center'}} className='aa'><Checkbox style={{margin:'5px'}}/><Avatar style={{margin:'5px'}}/>
             <div className='name'>
-            <h3>Brandon Washington</h3>
+            <h6>Brandon Washington</h6>
             <p>Head admin</p>
             </div>
             </TableCell>
             <TableCell style={{paddingLeft:'0rem'}}>
             <div className='name'>
-            <h3>Company name 1</h3>
-            <p>company type</p>
-            </div>
-            </TableCell>
-            <TableCell style={{paddingLeft:'0rem'}}>
-            <Slider
-            aria-label="Always visible"
-            defaultValue={80}
-            step={10}
-            
-            valueLabelDisplay="on"
-          /></TableCell>
-            <TableCell ><p className='finsh'>	In progress</p></TableCell>
-        
-          </TableRow>
-          <TableRow>
-            <TableCell style={{display:'flex' ,alignItems:'center'}} className='aa'><Checkbox style={{margin:'5px'}}/><Avatar style={{margin:'5px'}}/>
-            <div className='name'>
-            <h3>Brandon Washington</h3>
-            <p>Head admin</p>
-            </div>
-            </TableCell>
-            <TableCell style={{paddingLeft:'0rem'}}>
-            <div className='name'>
-            <h3>Company name 1</h3>
+            <h6>Company name 1</h6>
             <p>company type</p>
             </div>
             </TableCell>
@@ -123,13 +100,13 @@ export default function BasicTable() {
           <TableRow>
             <TableCell style={{display:'flex' ,alignItems:'center'}} className='aa'><Checkbox style={{margin:'5px'}}/><Avatar style={{margin:'5px'}}/>
             <div className='name'>
-            <h3>Brandon Washington</h3>
+            <h6>Brandon Washington</h6>
             <p>Head admin</p>
             </div>
             </TableCell>
             <TableCell style={{paddingLeft:'0rem'}}>
             <div className='name'>
-            <h3>Company name 1</h3>
+            <h6>Company name 1</h6>
             <p>company type</p>
             </div>
             </TableCell>
@@ -138,6 +115,30 @@ export default function BasicTable() {
             aria-label="Always visible"
             defaultValue={80}
             step={10}
+            
+            valueLabelDisplay="on"
+          /></TableCell>
+            <TableCell ><p className='finsh'>	In progress</p></TableCell>
+        
+          </TableRow>
+          <TableRow>
+            <TableCell style={{display:'flex' ,alignItems:'center'}} className='aa'><Checkbox style={{margin:'5px'}}/><Avatar style={{margin:'5px'}}/>
+            <div className='name'>
+            <h6>Brandon Washington</h6>
+            <p>Head admin</p>
+            </div>
+            </TableCell>
+            <TableCell style={{paddingLeft:'0rem'}}>
+            <div className='name'>
+            <h6>Company name 1</h6>
+            <p>company type</p>
+            </div>
+            </TableCell>
+            <TableCell style={{paddingLeft:'0rem'}}>
+            <Slider
+            aria-label="Always visible"
+            defaultValue={80}
+            step={6}
             
             valueLabelDisplay="on"
           /></TableCell>

@@ -20,6 +20,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis } from "recharts";
 import { BarChart, Bar, Cell, CartesianGrid, Tooltip, Legend } from "recharts";
 import { PieChart, Pie, Sector } from "recharts";
+
 const data = [
   {
     name: "Page A",
@@ -113,51 +114,53 @@ export default function Dashbord() {
         <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
-            <h1>32.53%</h1>
+            <h3>32.53%</h3>
             <p>-0.5%</p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
-            <h1>32.53%</h1>
+            <h3>32.53%</h3>
             <p>-0.5%</p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
-            <h1>32.53%</h1>
+            <h3>32.53%</h3>
             <p>-0.5%</p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange student-responsive">
             <p>Total Students</p>
-            <h1>32.53%</h1>
+            <h3>32.53%</h3>
             <p>-0.5%</p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange student-responsive">
             <p>Total Students</p>
-            <h1>32.53%</h1>
+            <h3>32.53%</h3>
             <p>-0.5%</p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange student-responsive">
             <p>Total Students</p>
-            <h1>32.53%</h1>
+            <h3>32.53%</h3>
             <p>-0.5%</p>
           </div>
         </Grid>
+
         <Grid item xs={12} md={4}>
           <div className="total-student">
             <div className="stuentleft">
               <h4>Total Students</h4>
               <p>Closed value</p>
-              <h2>357c</h2>
+              
+              <h2>32.53%</h2>
             </div>
             <div className="stuentright">
               <div className="line-graph">
@@ -186,8 +189,8 @@ export default function Dashbord() {
               </ResponsiveContainer>
             </div>
             <div className="text">
-              <h6>Total Program</h6>
-              <p>26.28%</p>
+              <p>Total Program</p>
+              <h4>26.28%</h4>
             </div>
             </Box>
             <Box className='graph-responsive'>
@@ -206,8 +209,8 @@ export default function Dashbord() {
               </ResponsiveContainer>
             </div>
             <div className="text">
-              <h6>Total Program</h6>
-              <p>26.28%</p>
+            <p>Total Program</p>
+            <h4>26.28%</h4>
             </div>
             </Box>
           </div>
@@ -329,9 +332,9 @@ export default function Dashbord() {
         </Grid>
         <Grid item xs={12} md={4}>
           <div className="circul-chart">
-            <h2>Type By Amount</h2>
+            <h4>Type By Amount</h4>
             <div className="piegraph">
-              <PieChart width={100} height={100}>
+              <PieChart width={100} height={177}>
                 <Pie
                   data={data}
                   dataKey="uv"
@@ -343,7 +346,7 @@ export default function Dashbord() {
               </PieChart>
             </div>
             <ul>
-              <li>Total</li>
+              <li> Total</li>
               <li>Net</li>
               <li>Gross</li>
               <li>AVG</li>
@@ -371,7 +374,7 @@ export default function Dashbord() {
         <Grid item xs={12} md={4}>
           <div className="Leave-Report">
             <div className="leave-head">
-              <h3>Leave Report</h3>
+              <h4>Leave Report</h4>
               <Button variant="contained">Month wise</Button>
             </div>
             <div>
@@ -387,7 +390,7 @@ export default function Dashbord() {
         </Grid>
         <Grid item xs={12} md={4}>
           <div className="recent">
-            <h3>Recent Events</h3>
+            <h4>Recent Events</h4>
             <div className="event">
               <p>Change in Directors</p>
               <div className="date-event">
@@ -435,7 +438,7 @@ export default function Dashbord() {
         <Grid item xs={12} md={4}>
           <div className="Activities">
             <div className="Activities-head">
-              <h3>Activities</h3>
+              <h4>Activities</h4>
               <p>20 finished, 5 remaining</p>
             </div>
             <li className="line">
@@ -487,11 +490,14 @@ export default function Dashbord() {
               </p>
               <p>1hr</p>
             </li>
+            <a href="www.google.com">
+              Show All <ArrowForwardIcon />
+            </a>
           </div>
         </Grid>
         <Grid item xs={12} md={4}>
           <div className="top-performer">
-            <h3>Top Performer</h3>
+            <h4>Top Performer</h4>
             <div className="clint">
               <div className="clint-left">
                 <Avatar />

@@ -24,6 +24,7 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logowhite.png";
+import DatePickers from "../Table/Calendar"
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -219,9 +220,10 @@ export default function SearchAppBar({ children }) {
         ""
       )}
 
-      <AppBar position="fixed">
+      <AppBar position="fixed" elevation={0} >
       
-        <Toolbar   className={ color ? 'responsive-bar header-bg' : 'responsive-bar'}>
+        <Toolbar  className={ color ? 'responsive-bar header-bg' : 'responsive-bar'} >
+        
           <Typography
             variant="h6"
             noWrap
@@ -231,11 +233,11 @@ export default function SearchAppBar({ children }) {
             <Avatar className="aavatar" />
 
             <div className={name ? 'name-of-user header' : 'name-of-user'}>
-              <h3>
-                <span style={{ color: "blue" }}>Good Morning,</span> Salman
-                Naqvi
-              </h3>
-              <p>Students performance summary this week</p>
+              <h1>
+                Good Morning , <span style={{ color: "black" }}>Salman
+                Naqvi</span> 
+              </h1>
+              <h3>Students performance summary this week</h3>
             </div>
           </Typography>
           <Box className="select-date">
@@ -250,9 +252,7 @@ export default function SearchAppBar({ children }) {
               <option value="3">Three</option>
             </select>
             <div className="date">
-              <DateRangeIcon />
-              <Divider orientation="vertical" flexItem />
-              <p> 4/2/2020</p>
+            <DatePickers/>
             </div>
           </Box>
           <Search>

@@ -2,27 +2,41 @@
     background-color: #f4f4f4;
     height: 100%;
     padding: 24px;
-    margin-top: 7rem;
+    margin-top: 6rem;
     font-family: "Manrope", sans-serif;
 }
 .feacter {
     display: flex;
+    margin-left: 8px;
     
 }
 button.avc{
-    margin: 0.5rem;
+    padding: 8px 15px;
+    border: 1px solid #CADDFF;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color: #000000;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 12px;
+    margin-right: 12px;
     align-items: center;
-    padding: 4px 8px;
-    margin: 0.5rem 0.2rem;
     display: flex;
-    align-items: center;
 }
 .prestange{
+    font-family: "Manrope", sans-serif;
     margin: 0rem 0.5rem;
     padding: 24px;
 }
-.prestange h1 {
+.prestange p{
+    font-size: 13px;
+    margin-bottom: 3px;
+    color: #8D8D8D;
+}
+.prestange h3 {
     margin: 0rem;
+    font-size: 26px;
 }
 .total-student{
     background-color: rgb(71, 71, 152);
@@ -32,19 +46,27 @@ button.avc{
     height: 160px;
     color: white;
     display: flex;
+    padding: 24px;
+    font-family: "Manrope", sans-serif;
 }
-.total-student h4 ,p ,h2{
-    padding-top: 1rem;
-    margin: 0rem 0rem 0rem 1rem;
-    margin-left: 1rem;
+.total-student h4{
+margin: 0px;
+margin-bottom: 24px;
+font-size: 16px;
+}
+.total-student p{
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.total-student h2{
+    font-size: 26px;
+    margin: 0%;
 }
 .stuentright{
     padding: 0rem 1rem;
     
 
 }
-
-
 .total-program{
     display: flex;
     justify-content: space-evenly;
@@ -66,6 +88,7 @@ button.avc{
     margin-left: 8px;
     margin-right: 8px;
     padding: 24px;
+    font-size: 16px;
 }
 .perfromance-text{
     display: flex;
@@ -77,6 +100,7 @@ button.avc{
 .p-leftside h5{
     margin: 10px 0px;
     color: #8c8c8c;
+    font-size: 13;
 }
 .p-rightside{
     display: flex;
@@ -84,11 +108,25 @@ button.avc{
     
 }
 .p-rightside li{
-    margin-right: 5px;
+    margin-right: 10px;
 }
 .perfromance img {
     width: 100%;
     height: 10.5rem;
+}
+.total-program{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.total-program .text p,h4{
+    padding-left: 0%;
+    margin: 0%;
+}
+
+.graph-responsive{
+    
 }
 .Market-Overview{
     background-color: white;
@@ -102,10 +140,23 @@ button.avc{
     font-weight: 400;
     margin-top: 0.625rem;
     margin-bottom: 0.625rem;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+.Market-Overview h4{
+    margin-bottom: 2px !important;
 }
 .Market-Overview img{
     width: 100%;
     height: 10rem;
+}
+.market-right Button{
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    background-color: #9e9e9e;
+    color: black;
 }
 .market-text{
     display: flex;
@@ -123,11 +174,16 @@ button.avc{
 }
 .dolor-left{
     display: flex;
+    align-items: center;
+
 }
 .dolor-right{
     display: flex;
     justify-content: center;
     text-align: center;
+}
+.dolor-left h4{
+    margin-left: 1rem !important;
 }
 .dolor-right li{
     margin-right: 0.5rem;
@@ -146,6 +202,7 @@ button.avc{
     justify-content: space-between;
     text-align: center;
     align-items: center;
+    padding: 6px 0px;
 }
 .todo-list button{
     background-color: blue;
@@ -163,6 +220,13 @@ button.avc{
     justify-content: space-evenly;
     align-items: center;
 }
+.list{
+    margin: 10px 0px;
+}
+.date-list{
+    margin-top: 8px !important;
+    margin-bottom: 5px!important;
+}
 .finsh{
     background-color: #FAD480;
     border-radius: 5px;
@@ -171,7 +235,7 @@ button.avc{
 .Enhance{
     background-image: url(../images/background.jpg);
     position: relative;
-    top: -2rem;
+    top: -6rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     padding: 24px;
@@ -180,14 +244,21 @@ button.avc{
 }
 .Enhance h2{
     margin-left: 0rem;
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
     font-size: 28px;
+    margin-top: 0rem;
 }
 .Enhance button{
-    padding: 10px 3px;
-    cursor: pointer;
+    font-style: normal;
     font-weight: bold;
+    font-size: 17px;
+    line-height: 23px;
+    padding: 15px 24px;
+    color: #ffffff;
+    border: none;
+    margin-top: 21px;
 }
+
 .circul-chart{
     background-color: white;
 
@@ -198,21 +269,35 @@ button.avc{
     flex-direction: column;
     justify-content: center;
 }
+.circul-chart h4{
+    margin-bottom: 16px;
+    margin-top: 0rem;
+}
 .circul-chart ul{
-    padding-left: 0%;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 0%;
+    justify-content: center;
 }
 .circul-chart ul li{
-    padding-left: 0%;
-    margin-left: 0%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    color: #737F8B;
+    font-size: 10px;
 }
-ul {
+/* ul {
     display: flex;
 
 }
 ul li{
     padding: 1rem;
     margin-left: 10px;
-}
+} */
 .text p{padding: 16px;}
 .request{
     background-color:white;
@@ -220,12 +305,32 @@ ul li{
     border-radius: 5px;
     padding: 24px;
     position: relative;
-    top: -10rem;
+    top: -14rem;
 }
+
 .head{
     display: flex;
     justify-content: space-between;
+    /* align-items: center; */
+}
+.head-left h4{
+    margin-bottom: 2px;
+
+}
+.head-left p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.head-right Button{
+    background: #1F3BB3;
+    color: #ffffff;
+    border-radius: 6px;
+    font-weight: 500;
     align-items: center;
+    padding: 10px;
 }
 .Leave-Report{
     background-color: white;
@@ -233,6 +338,16 @@ ul li{
     border-radius: 5px;
     margin-right: 5px;
 
+}
+.leave-head{
+    margin-bottom:1rem;
+    align-items: center;
+}
+.leave-head button{
+    background-color: #E9E9E9;
+    color: #000000;
+    font-weight: bold;
+    padding: 10px;
 }
  a{
     text-decoration: underline;
@@ -253,13 +368,26 @@ ul li{
     margin-right: 0.5rem;
     border-radius: 5px;
     position: relative;
-    top: -10rem;
+    top: -14rem;
+}
+.event{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+.event p{
+    padding: 0%;
+    margin-bottom: 8px;
 }
 .date-event{
     display: flex;
     align-items: center;
-    padding-top: 5px;
-    margin-bottom: 1rem;
+    
+}
+a {
+    display: flex;
+    align-items: center;
+    color: #1F3BB3;
 }
 .Activities{
     background-color: white;
@@ -268,12 +396,21 @@ ul li{
     margin-right: 0.5rem;
     border-radius: 5px;
     position: relative;
-    top: -10rem;
+    top: -14rem;
 }
 .Activities-head{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
+}
+.Activities-head P{
+    padding: 0%;
+}
+.line{
+    padding: 0%;
+    font-size: 13px;
+    list-style: circle !important;
 }
 li{
     display: flex;
@@ -288,16 +425,25 @@ li{
     top: -27rem;
     border-radius: 5px;
 }
+.top-performer h4{
+    padding: 0%;
+    margin-bottom: 1rem;
+}
+.clint{
+    padding: 8px 0px;
+    align-items: center;
+}
 .clint-left{
     display: flex;
     align-items: center;
     padding: 0.5rem;
 }
 .name{
-    margin-left: 5px;
+    margin-left: 1rem;
 }
 .name h6{
-    margin: 0%;
+    margin:  0px 0px 4px 4px;
+    font-size: 13px;
 }
 .name p{
     margin-top: 9px;
@@ -324,7 +470,7 @@ li{
          height:'200';
     }
     .data{
-        margin-top: 3rem;
+        margin-top: 5rem;
     }
 
     .student-responsive{
@@ -398,5 +544,24 @@ li{
     }
     .top-performer{
         top: 0rem;
+    }
+    .Enhance{
+        margin-top: 2rem;
+    }
+    .circul-chart{
+margin-top: -2rem;
+    }
+    .leave-head{
+        display: flex;
+        flex-direction: column;
+    }
+    .leave-head Button{
+        margin-top: 5px;
+    }
+    .recent{
+        margin-top: 10rem;
+    }
+    .top-performer{
+        margin-top: -10rem;
     }
 }

@@ -1,20 +1,30 @@
 .responsive-bar{
     background-color: #f4f4f4 !important;
-    color: black;
     display: flex;
     justify-content: space-between;
     box-shadow: none;
     font-family: "Manrope", sans-serif;
+    color: #6C7383;
+    padding-left: 3.5rem;
+    padding-right: 2.187rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+    height: 97px;
+    shadows: none;
+
     
 }
 .header-bg{
     background-color: white !important;
     transition: .3s ease-in-out;
     box-shadow: none;
+    color: black;
+    height: auto;
+    
+    
   }
- .header{
-     display: none;
- }
+
 .left-side-navbar{
     display: flex;
     align-items: center;
@@ -25,13 +35,36 @@
 .select-date{
     display: flex;
     justify-content: space-between;
-}    
-.date{
-    display: flex;
     align-items: center;
-    margin-left: 1rem;
-    border: 1px solid black;
-    padding: 0.5rem;
+}    
+select{
+    padding: 8px 15px;
+    border: 1px solid #DFDFDF;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Manrope", sans-serif;
+    min-width: 170px;
+    height: 34px;
+    background: #ffffff;
+}
+.date{
+    background: #ffffff;
+    font-family: "Manrope", sans-serif;
+    min-width: 170px;
+    border: 1px solid #DFDFDF;
+    border-radius: 6px;
+    margin-left: 5px;
+    height: 34px;
+}
+.date p{
+    padding: 0%;
+}
+.date-icon{
+    width: 12px;
+    height: 12px;
 }
 .nav-right-icon{
     display: flex;
@@ -50,6 +83,17 @@
 }
 .name-of-user{
     margin-left: 11rem;
+}
+.header{
+    display: none;
+}
+.name-of-user h1{
+    margin: 0%;
+    font-size: 28px;
+}
+.name-of-user h3{
+    margin: 0%;
+    font-size: 16px;
 }
 @media (max-width:900px) {
     .select-date{
@@ -70,5 +114,6 @@
     .nav-right-icon .right-avater{
         display: none;
     }
+    
     
 }
