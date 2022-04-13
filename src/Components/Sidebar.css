@@ -68,8 +68,18 @@ a{
     border-left: 1px solid  #232227;;
 }
 .link_text{
-    justify-content: center;
+    justify-content: space-between;
+    display: flex;
     font-size: 12px;
+    align-items: center;
+}
+.arrow{
+    margin-left: auto;
+    
+}
+.aaaa{
+    justify-content: flex-end;
+    margin-left: 3rem;
 }
 .mobile-link {
     color: white;
@@ -100,7 +110,7 @@ a{
 }
 .link-teacher{
     margin: 0%;
-    padding-right: 0%;
+
 }
 @media (max-width:900px) {
     .sidebar{

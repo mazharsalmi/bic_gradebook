@@ -14,6 +14,7 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import ListIcon from "@mui/icons-material/List";
 import Navbar from "../Components/Navbar"
 import { padding } from "@mui/system";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 export default function Sidebar({ children }) {
   const [isOpen, setIsOpen] = useState(true);
   // const toggle =()=> setIsOpen(!isOpen);
@@ -52,7 +53,7 @@ export default function Sidebar({ children }) {
               </NavLink>
               <NavLink to='/reporting'  className="link">
                 <div className="icon"><AutoGraphIcon /></div>
-                <div className="link_text">Reporting</div>
+                <div className="link_text">Reporting <ArrowRightIcon className="arrow"/></div>
               </NavLink>
               <div className="heading">TIMETABLE</div>
               <NavLink to='/teachertiming'  className="link link-teacher">
@@ -66,11 +67,11 @@ export default function Sidebar({ children }) {
               <div className="heading">SETUP</div>
               <NavLink to='/class'  className="link">
                 <div className="icon"><PersonIcon /></div>
-                <div className="link_text">Class</div>
+                <div className="link_text">Class<ArrowRightIcon className="arrow"/></div>
                 </NavLink>
                 <NavLink to='/subjects'  className="link">
                 <div className="icon"><PersonIcon /></div>
-                <div className="link_text">Subjects</div>
+                <div className="link_text">Subjects<ArrowRightIcon className="arrow"/></div>
               </NavLink>
               <NavLink to='/exam'  className="link">
                 <div className="icon"><ListIcon /></div>
@@ -78,7 +79,7 @@ export default function Sidebar({ children }) {
                 </NavLink>
                 <NavLink to='/unlivesities'  className="link">
                 <div className="icon"><PersonIcon /></div>
-                <div className="link_text">Unlivesities</div>
+                <div className="link_text">Unlivesities <ArrowRightIcon className="arrow"/></div>
                 </NavLink>
                 <div className="heading">ADMINISTRATION</div>
 
