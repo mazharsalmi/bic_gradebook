@@ -11,7 +11,7 @@
     padding-bottom: 0px;
     
     height: 97px;
-    shadows: none;
+    
 
     
 }
@@ -21,6 +21,8 @@
     box-shadow: none;
     color: black;
     height: auto;
+    z-index: 999;
+    position: relative;
     
     
   }
@@ -82,18 +84,31 @@ select{
     text-decoration: none;
 }
 .name-of-user{
-    margin-left: 11rem;
+    margin-left: 14.5rem;
 }
 .header{
     display: none;
+    
 }
 .name-of-user h1{
     margin: 0%;
     font-size: 28px;
+    font-weight: normal;
 }
 .name-of-user h3{
     margin: 0%;
     font-size: 16px;
+    font-weight: normal;
+}
+.sidebar-mobile{
+    
+}
+.top_section1{
+    
+    display: none;
+}
+.heading{
+    color: white;
 }
 @media (max-width:900px) {
     .select-date{
@@ -115,5 +130,11 @@ select{
         display: none;
     }
     
+    
+}
+@media (min-width:900px) and (max-width:1344px) {
+    .name-of-user{
+        display: none;
+    }
     
 }

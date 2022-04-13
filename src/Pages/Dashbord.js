@@ -20,6 +20,10 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { ResponsiveContainer, LineChart, Line, XAxis, YAxis } from "recharts";
 import { BarChart, Bar, Cell, CartesianGrid, Tooltip, Legend } from "recharts";
 import { PieChart, Pie, Sector } from "recharts";
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import CircleIcon from '@mui/icons-material/Circle';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 const data = [
   {
@@ -97,15 +101,15 @@ export default function Dashbord() {
     <div className="data">
       <div className="feacter">
         <button className="avc">
-          <ShareIcon />
+          <ShareIcon className="icon-head" />
           Share
         </button>
         <button className="avc">
-          <PrintIcon />
+          <PrintIcon className="icon-head" />
           Print
         </button>
         <button className="avc" style={{ background: " rgb(71, 71, 152)", color: "wheat" }}>
-          <SendToMobileIcon />
+          <SendToMobileIcon className="icon-head"/>
           Export
         </button>
       </div>
@@ -115,61 +119,64 @@ export default function Dashbord() {
           <div className="prestange">
             <p>Total Students</p>
             <h3>32.53%</h3>
-            <p>-0.5%</p>
+            <p><span style={{color:'red'}}><ArrowDropDownIcon/>-0.5%</span></p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
             <h3>32.53%</h3>
-            <p>-0.5%</p>
+            <p><span style={{color:'green'}}><ArrowDropUpIcon/>-0.5%</span></p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange">
             <p>Total Students</p>
             <h3>32.53%</h3>
-            <p>-0.5%</p>
+            <p><span style={{color:'red'}}><ArrowDropDownIcon/>-0.5%</span></p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange student-responsive">
             <p>Total Students</p>
             <h3>32.53%</h3>
-            <p>-0.5%</p>
+            <p><span style={{color:'green'}}><ArrowDropUpIcon/>-0.5%</span></p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange student-responsive">
             <p>Total Students</p>
             <h3>32.53%</h3>
-            <p>-0.5%</p>
+            <p><span style={{color:'red'}}><ArrowDropDownIcon/>-0.5%</span></p>
           </div>
         </Grid>
         <Grid item xs={4} md={2}>
           <div className="prestange student-responsive">
             <p>Total Students</p>
             <h3>32.53%</h3>
-            <p>-0.5%</p>
+            <p><span style={{color:'green'}}><ArrowDropUpIcon/>-0.5%</span></p>
           </div>
         </Grid>
 
         <Grid item xs={12} md={4}>
           <div className="total-student">
-            <div className="stuentleft">
-              <h4>Total Students</h4>
+          <h4>Total Students</h4>
+          <div className="total-buttom">  
+          <div className="stuentleft">
+            
               <p>Closed value</p>
               
               <h2>32.53%</h2>
             </div>
             <div className="stuentright">
               <div className="line-graph">
-                <ResponsiveContainer width={200} aspect={3}>
+                <ResponsiveContainer width={150} aspect={3}>
                   <LineChart data={pdata}>
                     <Line type="monotone" dataKey="student" stroke="red" />
                   </LineChart>
                 </ResponsiveContainer>
               </div>
+            </div>
             </div>
           </div>
           <div className="total-program">
@@ -223,8 +230,8 @@ export default function Dashbord() {
                 <h5>Lorem is simply dummy txt of the printing</h5>
               </div>
               <div className="p-rightside">
-                <li> This week</li>
-                <li> last week</li>
+              <span style={{color:'blue'}}><CircleIcon/></span> <li>This week</li>
+              <span style={{color:'	#7B68EE'}}><CircleIcon/></span> <li> last week</li>
               </div>
             </div>
             <div className="chart">
@@ -257,8 +264,8 @@ export default function Dashbord() {
                 <h4>(+1.37%)</h4>
               </div>
               <div className="dolor-right">
-                <li>This week</li>
-                <li>last week</li>
+              <span style={{color:'blue'}}><CircleIcon/></span> <li>This week</li>
+              <span style={{color:'	#7B68EE'}}><CircleIcon/></span> <li> last week</li>
               </div>
             </div>
             <div >
@@ -276,7 +283,8 @@ export default function Dashbord() {
           <div className="todo">
             <div className="todo-list">
               <h4>Todo List</h4>
-              <button>+</button>
+              
+              <AddCircleIcon/>
             </div>
             <div className="list">
               <p>
@@ -346,10 +354,10 @@ export default function Dashbord() {
               </PieChart>
             </div>
             <ul>
-              <li> Total</li>
-              <li>Net</li>
-              <li>Gross</li>
-              <li>AVG</li>
+            <span style={{color:'red'}}><CircleIcon/></span> <li> Total</li>
+            <span style={{color:'blue'}}><CircleIcon/></span> <li>Net</li>
+            <span style={{color:'green'}}><CircleIcon/></span> <li>Gross</li>
+            <span style={{color:'pink'}}><CircleIcon/></span> <li>AVG</li>
             </ul>
           </div>
         </Grid>

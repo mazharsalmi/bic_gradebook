@@ -11,6 +11,7 @@
     
 }
 button.avc{
+    height: 30px;
     padding: 8px 15px;
     border: 1px solid #CADDFF;
     box-sizing: border-box;
@@ -24,6 +25,12 @@ button.avc{
     align-items: center;
     display: flex;
 }
+.icon-head{
+    height: 12px !important;
+    width: 12px !important;
+    margin-right: 5px;
+
+}
 .prestange{
     font-family: "Manrope", sans-serif;
     margin: 0rem 0.5rem;
@@ -33,6 +40,12 @@ button.avc{
     font-size: 13px;
     margin-bottom: 3px;
     color: #8D8D8D;
+    display: flex;
+    align-items: center;
+}
+.prestange p span{
+    display: flex;
+    align-items: center;
 }
 .prestange h3 {
     margin: 0rem;
@@ -45,9 +58,13 @@ button.avc{
     margin-right: 0.5rem;
     height: 160px;
     color: white;
-    display: flex;
+    
     padding: 24px;
     font-family: "Manrope", sans-serif;
+}
+.total-buttom{
+    display: flex;
+    align-items: baseline;
 }
 .total-student h4{
 margin: 0px;
@@ -57,13 +74,14 @@ font-size: 16px;
 .total-student p{
     font-size: 13px;
     margin-bottom: 5px;
+    padding: 0%;
 }
 .total-student h2{
     font-size: 26px;
     margin: 0%;
 }
 .stuentright{
-    padding: 0rem 1rem;
+    padding: 0rem;
     
 
 }
@@ -105,10 +123,16 @@ font-size: 16px;
 .p-rightside{
     display: flex;
     padding: 5px;
+    align-items: center;
+    
     
 }
 .p-rightside li{
     margin-right: 10px;
+    
+}
+.p-rightside span{
+    
 }
 .perfromance img {
     width: 100%;
@@ -181,6 +205,7 @@ font-size: 16px;
     display: flex;
     justify-content: center;
     text-align: center;
+    align-items: center;
 }
 .dolor-left h4{
     margin-left: 1rem !important;
@@ -290,14 +315,19 @@ font-size: 16px;
     color: #737F8B;
     font-size: 10px;
 }
-/* ul {
+
+ ul {
     display: flex;
+    align-items: center;
 
 }
-ul li{
+ul span{
+    margin-right: 5px;
+}
+/* ul li{
     padding: 1rem;
     margin-left: 10px;
-} */
+} */ */
 .text p{padding: 16px;}
 .request{
     background-color:white;
@@ -461,7 +491,8 @@ li{
 .line-graph{
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    
+    
 }
 
 @media (max-width:900px) {
@@ -546,10 +577,15 @@ li{
         top: 0rem;
     }
     .Enhance{
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
     .circul-chart{
-margin-top: -2rem;
+        margin-top: -6rem !important;
+        margin: 0px 8px;
+    }
+    .Leave-Report{
+        margin-left: 8px;
+        margin-right: 8px;
     }
     .leave-head{
         display: flex;
@@ -559,9 +595,17 @@ margin-top: -2rem;
         margin-top: 5px;
     }
     .recent{
-        margin-top: 10rem;
+        margin-top: 14rem;
     }
     .top-performer{
-        margin-top: -10rem;
+        margin-top: -14rem;
+        margin-left: 8px;
+        margin-right: 8px;
     }
+    .data{
+        margin-top: 6rem;
+    }
+.todo{
+    margin: 0px 8px;
+}
 }

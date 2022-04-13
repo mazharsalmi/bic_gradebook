@@ -1,4 +1,4 @@
-import React, { useState , useEffect , Container} from "react";
+import React, { useState, useEffect, Container } from "react";
 import { motion } from "framer-motion";
 
 import navbar from "../Components/Navbar.css";
@@ -24,7 +24,7 @@ import DateRangeIcon from "@mui/icons-material/DateRange";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logowhite.png";
-import Date from "../Table/Date"
+import Date from "../Table/Date";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -68,135 +68,49 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const routes = [
-  {
-    path: "/",
-    name: "DashBoard",
-    icon: <GridViewIcon />,
-  },
-  {
-    path: "/gradbook",
-    name: "GRADEBOOK",
-  },
-  {
-    path: "/grades",
-    name: "Grades Entry",
-    icon: <MessageIcon />,
-  },
-  {
-    path: "/prepare",
-    name: "Prepare Result",
-    icon: <DateRangeIcon />,
-  },
-  {
-    path: "/reporting",
-    name: "Reporting",
-    icon: <AutoGraphIcon />,
-  },
-  {
-    path: "/timetable",
-    name: "TIMETABLE",
-  },
-  {
-    path: "/teachertiming",
-    name: "Teacher Timetable",
-    icon: <MessageIcon />,
-  },
-  {
-    path: "/studenttiming",
-    name: "Student Timetable",
-    icon: <DateRangeIcon />,
-  },
-  {
-    path: "/setup",
-    name: "SETUP",
-  },
-  {
-    path: "/class",
-    name: "Class",
-    icon: <PersonIcon />,
-  },
-  {
-    path: "/subjects",
-    name: "Subjects",
-    icon: <PersonIcon />,
-  },
-  {
-    path: "/exam",
-    name: "Exams Setup",
-    icon: <ListIcon />,
-  },
-  {
-    path: "/unlivesities",
-    name: "Unlivesities",
-    icon: <PersonIcon />,
-  },
-  {
-    path: "/administration",
-    name: "ADMINISTRATION",
-  },
-  {
-    path: "/usergroup",
-    name: "User Groups",
-    icon: <MessageIcon />,
-  },
-  {
-    path: "/menuassignation",
-    name: "Menu Assignation",
-    icon: <DateRangeIcon />,
-  },
-  {
-    path: "/allusers",
-    name: "All Users",
-    icon: <ListIcon />,
-  },
-];
-
 export default function SearchAppBar({ children }) {
   const [show, setShow] = useState(false);
-
   const handleClicks = () => {
     setShow(!show);
   };
-  const [name ,setName] =useState(false);
-  function hideName(){
-    if(window.scrollY >=90){
-      setName(true)
-
-    }else{
-      setName(false)
+  const [name, setName] = useState(false);
+  function hideName() {
+    if (window.scrollY >= 90) {
+      setName(true);
+    } else {
+      setName(false);
     }
   }
-  const [color , setColor]=useState(false) 
-  function chaingColor(){
-    if (window.scrollY >=90){
-      setColor(true)
-    }else{
-      setColor(false)
+  const [color, setColor] = useState(false);
+  function chaingColor() {
+    if (window.scrollY >= 90) {
+      setColor(true);
+    } else {
+      setColor(false);
     }
   }
-  window.addEventListener('scroll', hideName)
-  window.addEventListener('scroll' , chaingColor)
+  window.addEventListener("scroll", hideName);
+  window.addEventListener("scroll", chaingColor);
   useEffect(() => {
-    window.scrollBy(0, 0)
-  }, [])
+    window.scrollBy(0, 0);
+  }, []);
   return (
     <Box>
       {show ? (
         <div>
           <div className="main" style={{ position: "relative" }}>
             <motion.div
-              animate={{ width: "250px" }}
+              animate={{ width: "220px" }}
               className="sidebar-mobile"
               style={{
                 position: "absolute",
                 right: "0",
-                top: "4rem",
+                top: "6.5rem",
                 zIndex: "99",
                 backgroundColor: "black",
               }}
             >
-              <div className="top_section">
+              <div className="top_section1">
                 <MenuIcon
                   className="menu-icon nav-img"
                   onClick={handleClicks}
@@ -204,12 +118,93 @@ export default function SearchAppBar({ children }) {
                 <img src={logo} alt="logo" />
               </div>
               <section className="routes">
-                {routes.map((route) => (
-                  <NavLink to={route.path} key={route.name} className="link">
-                    <div className="icon">{route.icon}</div>
-                    <div className="link_text">{route.name}</div>
-                  </NavLink>
-                ))}
+                <NavLink to="/" className="link">
+                  <div className="icon">
+                    <GridViewIcon />
+                  </div>
+                  <div className="link_text">DashBoard</div>
+                </NavLink>
+                <div className="heading">
+                  {" "}
+                  <li>GRADEBOOK</li>
+                </div>
+
+                <NavLink to="/grades" className="link">
+                  <div className="icon">
+                    <MessageIcon />
+                  </div>
+                  <div className="link_text">Grades Entry</div>
+                </NavLink>
+                <NavLink to="/prepare" className="link">
+                  <div className="icon">
+                    <DateRangeIcon />
+                  </div>
+                  <div className="link_text">Prepare Result</div>
+                </NavLink>
+                <NavLink to="/reporting" className="link">
+                  <div className="icon">
+                    <AutoGraphIcon />
+                  </div>
+                  <div className="link_text">Reporting</div>
+                </NavLink>
+                <div className="heading">TIMETABLE</div>
+                <NavLink to="/teachertiming" className="link link-teacher">
+                  <div className="icon">
+                    <MessageIcon />
+                  </div>
+                  <div className="link_text">Teacher Timetable</div>
+                </NavLink>
+                <NavLink to="/studenttiming" className="link link-teacher">
+                  <div className="icon">
+                    <DateRangeIcon />
+                  </div>
+                  <div className="link_text">Student Timetable</div>
+                </NavLink>
+                <div className="heading">SETUP</div>
+                <NavLink to="/class" className="link">
+                  <div className="icon">
+                    <PersonIcon />
+                  </div>
+                  <div className="link_text">Class</div>
+                </NavLink>
+                <NavLink to="/subjects" className="link">
+                  <div className="icon">
+                    <PersonIcon />
+                  </div>
+                  <div className="link_text">Subjects</div>
+                </NavLink>
+                <NavLink to="/exam" className="link">
+                  <div className="icon">
+                    <ListIcon />
+                  </div>
+                  <div className="link_text">Exams</div>
+                </NavLink>
+                <NavLink to="/unlivesities" className="link">
+                  <div className="icon">
+                    <PersonIcon />
+                  </div>
+                  <div className="link_text">Unlivesities</div>
+                </NavLink>
+                <div className="heading">ADMINISTRATION</div>
+
+                <NavLink to="/usergroup" className="link">
+                  <div className="icon">
+                    <MessageIcon />
+                  </div>
+                  <div className="link_text">User Groups</div>
+                </NavLink>
+                <NavLink to="/menuassignation" className="link link-teacher">
+                  <div className="icon">
+                    <DateRangeIcon />
+                  </div>
+                  <div className="link_text">Menu Assignation</div>
+                </NavLink>
+                <NavLink to="/allusers" className="link">
+                  <div className="icon">
+                    <ListIcon />
+                  </div>
+                  <div className="link_text">All Users</div>
+                </NavLink>
               </section>
             </motion.div>
 
@@ -220,10 +215,10 @@ export default function SearchAppBar({ children }) {
         ""
       )}
 
-      <AppBar position="fixed" elevation={0} >
-      
-        <Toolbar  className={ color ? 'responsive-bar header-bg' : 'responsive-bar'} >
-        
+      <AppBar position="fixed" elevation={0}>
+        <Toolbar
+          className={color ? "responsive-bar header-bg" : "responsive-bar"}
+        >
           <Typography
             variant="h6"
             noWrap
@@ -232,10 +227,10 @@ export default function SearchAppBar({ children }) {
           >
             <Avatar className="aavatar" />
 
-            <div className={name ? 'name-of-user header' : 'name-of-user'}>
+            <div className={name ? "name-of-user header" : "name-of-user"}>
               <h1>
-                Good Morning , <span style={{ color: "black" }}>Salman
-                Naqvi</span> 
+                Good Morning ,{" "}
+                <span style={{ color: "black" }}>Salman Naqvi</span>
               </h1>
               <h3>Students performance summary this week</h3>
             </div>
@@ -252,7 +247,7 @@ export default function SearchAppBar({ children }) {
               <option value="3">Three</option>
             </select>
             <div className="date">
-            <Date/>
+              <Date />
             </div>
           </Box>
           <Search>
@@ -271,7 +266,6 @@ export default function SearchAppBar({ children }) {
             <MenuIcon className="menu-icon nav-img" onClick={handleClicks} />
           </div>
         </Toolbar>
-        
       </AppBar>
     </Box>
   );
