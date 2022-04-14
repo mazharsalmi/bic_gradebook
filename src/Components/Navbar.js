@@ -73,6 +73,10 @@ export default function SearchAppBar({ children }) {
   const handleClicks = () => {
     setShow(!show);
   };
+  const RemoveSidebar =(e)=>{
+e.addEventListener.NavLink(true)
+
+  }
   const [name, setName] = useState(false);
   function hideName() {
     if (window.scrollY >= 90) {
@@ -118,7 +122,7 @@ export default function SearchAppBar({ children }) {
                 <img src={logo} alt="logo" />
               </div>
               <section className="routes">
-                <NavLink to="/" className="link">
+                <NavLink to="/" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <GridViewIcon />
                   </div>
@@ -129,13 +133,13 @@ export default function SearchAppBar({ children }) {
                   <li>GRADEBOOK</li>
                 </div>
 
-                <NavLink to="/grades" className="link">
+                <NavLink to="/grades" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <MessageIcon />
                   </div>
                   <div className="link_text">Grades Entry</div>
                 </NavLink>
-                <NavLink to="/prepare" className="link">
+                <NavLink to="/prepare" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <DateRangeIcon />
                   </div>
@@ -148,38 +152,38 @@ export default function SearchAppBar({ children }) {
                   <div className="link_text">Reporting</div>
                 </NavLink>
                 <div className="heading">TIMETABLE</div>
-                <NavLink to="/teachertiming" className="link link-teacher">
+                <NavLink to="/teachertiming" className="link link-teacher" onClick={RemoveSidebar}>
                   <div className="icon">
                     <MessageIcon />
                   </div>
                   <div className="link_text">Teacher Timetable</div>
                 </NavLink>
-                <NavLink to="/studenttiming" className="link link-teacher">
+                <NavLink to="/studenttiming" className="link link-teacher" onClick={RemoveSidebar}>
                   <div className="icon">
                     <DateRangeIcon />
                   </div>
                   <div className="link_text">Student Timetable</div>
                 </NavLink>
                 <div className="heading">SETUP</div>
-                <NavLink to="/class" className="link">
+                <NavLink to="/class" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <PersonIcon />
                   </div>
                   <div className="link_text">Class</div>
                 </NavLink>
-                <NavLink to="/subjects" className="link">
+                <NavLink to="/subjects" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <PersonIcon />
                   </div>
                   <div className="link_text">Subjects</div>
                 </NavLink>
-                <NavLink to="/exam" className="link">
+                <NavLink to="/exam" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <ListIcon />
                   </div>
                   <div className="link_text">Exams</div>
                 </NavLink>
-                <NavLink to="/unlivesities" className="link">
+                <NavLink to="/unlivesities" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <PersonIcon />
                   </div>
@@ -187,19 +191,19 @@ export default function SearchAppBar({ children }) {
                 </NavLink>
                 <div className="heading">ADMINISTRATION</div>
 
-                <NavLink to="/usergroup" className="link">
+                <NavLink to="/usergroup" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <MessageIcon />
                   </div>
                   <div className="link_text">User Groups</div>
                 </NavLink>
-                <NavLink to="/menuassignation" className="link link-teacher">
+                <NavLink to="/menuassignation" className="link link-teacher" onClick={RemoveSidebar}>
                   <div className="icon">
                     <DateRangeIcon />
                   </div>
                   <div className="link_text">Menu Assignation</div>
                 </NavLink>
-                <NavLink to="/allusers" className="link">
+                <NavLink to="/allusers" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <ListIcon />
                   </div>

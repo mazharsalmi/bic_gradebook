@@ -9,8 +9,9 @@
     padding-right: 2.187rem;
     padding-top: 0px;
     padding-bottom: 0px;
-    
     height: 97px;
+    position: absolute;
+    z-index: 100;
     
 
     
