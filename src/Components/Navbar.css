@@ -135,7 +135,12 @@ select{
     }
     .responsive-bar{
         width: 100%;
-        justify-content: space-evenly;
+    
+    
+    }
+    .nav-right-icon{
+        
+        margin-right: 1rem;
     }
     .nav-right-icon .menu-icon{
         display: block;
@@ -151,11 +156,24 @@ select{
     .name-of-user{
         display: none;
     }
+    .responsive-bar{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-right-icon{
+        margin-right: 18rem;
+        margin-left: auto;
+        /* margin-right: 13rem; */
+    }
     
 }
 @media (max-width:600px) {
     .left-side-navbar .aavatar{
         display: none;
+    }
+    .nav-right-icon{
+        
+        margin-right: 1rem;
     }
     
 }
