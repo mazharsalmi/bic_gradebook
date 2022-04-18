@@ -259,7 +259,7 @@ font-size: 16px;
 .Enhance{
     background-image: url(../images/background.jpg);
     position: relative;
-    top: -6rem;
+    top: -8rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     padding: 24px;
@@ -334,7 +334,7 @@ ul span{
     border-radius: 5px;
     padding: 24px;
     position: relative;
-    top: -14rem;
+    top: -16rem;
 }
 
 .head{
@@ -397,7 +397,7 @@ ul span{
     margin-right: 0.5rem;
     border-radius: 5px;
     position: relative;
-    top: -14rem;
+    top: -16rem;
 }
 .event{
     padding-top: 8px;
@@ -425,7 +425,7 @@ a {
     margin-right: 0.5rem;
     border-radius: 5px;
     position: relative;
-    top: -14rem;
+    top: -16rem;
 }
 .Activities-head{
     display: flex;
