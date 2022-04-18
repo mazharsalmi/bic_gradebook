@@ -70,16 +70,24 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function SearchAppBar({ children }) {
   const [show, setShow] = useState(false);
+  const [poss,setPoss]=useState(true)
+ 
+
   const handleClicks = () => {
     setShow(!show);
   };
   const RemoveSidebar =(e)=>{
-e.addEventListener.NavLink(true)
+      setShow(false)
 
+  }
+
+  const posss={
+    position:"fixed"
   }
   const [name, setName] = useState(false);
   function hideName() {
     if (window.scrollY >= 90) {
+     setPoss(true)
       setName(true);
     } else {
       setName(false);
@@ -219,8 +227,10 @@ e.addEventListener.NavLink(true)
         ""
       )}
 
-      <AppBar position="fixed" elevation={0}>
+      <AppBar className="responsive-bar"  elevation={0}>
         <Toolbar
+        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000
+      }}
           className={color ? "responsive-bar header-bg" : "responsive-bar"}
         >
           <Typography
@@ -231,7 +241,7 @@ e.addEventListener.NavLink(true)
           >
             <Avatar className="aavatar" />
 
-            <div className={name ? "name-of-user header" : "name-of-user"}>
+            <div  className={name ? "name-of-user header" : "name-of-user"}>
               <h1>
                 Good Morning ,{" "}
                 <span style={{ color: "black" }}>Salman Naqvi</span>

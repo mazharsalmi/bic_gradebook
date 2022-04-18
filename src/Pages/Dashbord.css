@@ -2,7 +2,6 @@
     background-color: #f4f4f4;
     height: 100%;
     padding: 24px;
-    margin-top: 6rem;
     font-family: "Manrope", sans-serif;
 }
 .feacter {
@@ -501,7 +500,7 @@ li{
          height:'200';
     }
     .data{
-        margin-top: 5rem;
+        margin-top: 0rem;
     }
 
     .student-responsive{
@@ -603,7 +602,7 @@ li{
         margin-right: 8px;
     }
     .data{
-        margin-top: 6rem;
+        margin-top: 0rem;
     }
 .todo{
     margin: 0px 8px;

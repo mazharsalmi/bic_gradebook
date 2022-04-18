@@ -97,6 +97,35 @@ a{
     border-left: 1px solid  white;
     transform: 2s;
 }
+.menu-drop{
+    display: "flex";
+    flex-direction: column;
+    background-color: black;
+    padding-left: 0%;
+    margin: 0%;
+    padding: 0.7rem 1rem;
+    position: relative;
+    font-size: 12px;
+    line-height: 1;
+    height: auto;
+    align-items: center;
+    transition:  0.2s linear ;
+    position: sticky;
+    
+    
+}
+.menu-drop li{
+    padding: 8px;
+    
+}
+
+.dropdown{
+    color: white;
+
+}
+.dropdown:hover{
+    color: #1F3BB3;
+}
 .heading{
     margin: 0 30px;
     font-size: 11px;
@@ -110,7 +139,16 @@ a{
 }
 .link-teacher{
     margin: 0%;
-
+    
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 @media (max-width:900px) {
     .sidebar{
@@ -120,5 +158,6 @@ a{
     .sidebar1{
         display: none;
     }
+    
     
 }
