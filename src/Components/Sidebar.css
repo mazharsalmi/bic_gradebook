@@ -65,13 +65,15 @@ a{
     font-weight: bold;
     font-size: 13px;
     font-family: "Manrope", sans-serif;
-    border-left: 1px solid  #232227;;
+    border-left: 1px solid  #232227;
+    font-weight: 300;
 }
 .link_text{
     justify-content: space-between;
     display: flex;
     font-size: 12px;
     align-items: center;
+    
 }
 .arrow{
     margin-left: auto;
