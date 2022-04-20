@@ -152,6 +152,10 @@ select{
     
     
 }
+.search{
+        
+    width: 10rem !important;
+}
 @media (min-width:900px) and (max-width:1344px) {
     .name-of-user{
         display: none;

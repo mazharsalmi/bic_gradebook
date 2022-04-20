@@ -13,12 +13,12 @@ export default function Prepare() {
         </p>
         <p><span style={{color:'#737F8B '}}>Georgia</span></p>
         </div>
-        <div className='left-side-calendar'>
+        <div className='left-side-calendar'style={{borderColor:'red'}}>
         <p>Deciphering Marketing Lingo For Small Business Owners
         </p>
         <p><span style={{color:'#737F8B '}}>Georgia</span></p>
         </div>
-        <div className='left-side-calendar'>
+        <div className='left-side-calendar' >
         <p>Deciphering Marketing Lingo For Small Business Owners
         </p>
         <p><span style={{color:'#737F8B '}}>Georgia</span></p>

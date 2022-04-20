@@ -229,7 +229,7 @@ export default function SearchAppBar({ children }) {
 
       <AppBar className="responsive-bar"  elevation={0}>
         <Toolbar
-        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000
+        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000,top:0,
       }}
           className={color ? "responsive-bar header-bg" : "responsive-bar"}
         >
@@ -264,7 +264,7 @@ export default function SearchAppBar({ children }) {
               <Date />
             </div>
           </Box>
-          <Search>
+          <Search className="search">
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>

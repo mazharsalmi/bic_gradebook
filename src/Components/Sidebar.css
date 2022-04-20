@@ -102,27 +102,25 @@ a{
 .menu-drop{
     display: "flex";
     flex-direction: column;
-    background-color: black;
-    padding-left: 0%;
-    margin: 0%;
-    padding: 0.7rem 1rem;
-    position: relative;
+    background-color: rgb(30, 28, 28);
     font-size: 12px;
     line-height: 1;
     height: auto;
-    align-items: center;
-    transition:  0.2s linear ;
-    position: sticky;
-    
-    
+    align-items: flex-start !important;
+    margin: 0%;
+    padding-left: 0%;
+  
 }
 .menu-drop li{
     padding: 8px;
+margin-left: 5rem;    
+    
     
 }
 
 .dropdown{
     color: white;
+   
 
 }
 .dropdown:hover{

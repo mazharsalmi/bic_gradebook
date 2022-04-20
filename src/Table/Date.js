@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
     marginRight: theme.spacing(1),
     width: 170,
-    textDecoration:'none'
+    
   },
 }));
 
@@ -25,10 +25,10 @@ export default function DatePickers() {
       <TextField
         id="date"
         type="date"
-        defaultValue="2017-05-24"
+        defaultValue="2022-03-20"
         className={classes.textField}
         InputLabelProps={{
-          shrink: true,
+          shrink: false,
         }}
       />
     </form>

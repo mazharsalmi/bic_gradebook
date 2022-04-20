@@ -415,7 +415,7 @@ export default function Dashbord() {
               <p>Change in Directors</p>
               <div className="date-event">
                 <p>
-                  <DateRangeIcon />
+                  <DateRangeIcon style={{marginRight:'8px'}}/>
                   Mar 14, 2019
                 </p>
               </div>
@@ -425,7 +425,7 @@ export default function Dashbord() {
               <p>Change in Directors</p>
               <div className="date-event">
                 <p>
-                  <DateRangeIcon />
+                  <DateRangeIcon style={{marginRight:'8px'}}/>
                   Mar 14, 2019
                 </p>
               </div>
@@ -435,7 +435,7 @@ export default function Dashbord() {
               <p>Change in Directors</p>
               <div className="date-event">
                 <p>
-                  <DateRangeIcon />
+                  <DateRangeIcon style={{marginRight:'8px'}}/>
                   Mar 14, 2019
                 </p>
               </div>
