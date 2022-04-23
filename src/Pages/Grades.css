@@ -9,13 +9,11 @@
 .data1{
     display: flex;
     background-color: white;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 12px;
 }
-.data input {
-    padding: 5px 2px;
-}
+
 .student-grades{
     background-color: white;
     margin-left: 4rem;
@@ -26,17 +24,36 @@
     margin-bottom: 4rem;
 }
 .sort{
-    background-color: rgb(125, 125, 223);
-    padding: 8px;
-    margin-left: 5px;
-    color: white;
-    border-radius: 50%;
-    font-size: small;
-    font-weight: 200;
+    background-color: rgb(125, 125, 223) !important;
+    padding: 8px !important;
+    margin-left: 5px !important;
+    color: white !important;
+    border-radius: 50% !important;
+    font-size: small !important;
+    font-weight: 200 !important;
 }
 .label1{
     display: flex;
     align-items: center;
+    margin-right: 1rem;
+}
+.table-heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.table-heading p{
+    font-weight: 300;
+    font-size: .875rem;
+    
+}
+.table-heading Button{
+    border: 1px solid black;
+}
+.table-heading Button:hover{
+    background-color: blue !important;
+    color: white !important;
 }
 @media (max-width:900px) {
     .student-grades{

@@ -51,7 +51,7 @@ button.avc{
     font-size: 26px;
 }
 .total-student{
-    background-color: rgb(71, 71, 152);
+    background-color: rgb(71, 71, 152) !important;
     border-radius: 5px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -64,6 +64,34 @@ button.avc{
 .total-buttom{
     display: flex;
     align-items: baseline;
+}
+.main-total{
+    display: flex;
+    justify-content: space-between;
+}
+.new-total{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+   width: 100%;
+   margin-left: 8px;
+   margin-right: 8px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+.new-total:hover{
+    background-color: #E9E9E9;
+    cursor: pointer;
+
+}
+.new-total h2{
+    margin: 0%;
+}
+.new-total p{
+    padding: 0%;
 }
 .total-student h4{
 margin: 0px;
@@ -139,8 +167,7 @@ font-size: 16px;
 }
 .total-program{
     padding: 1rem;
-    display: flex;
-    justify-content: center;
+    
 }
 
 .total-program .text p,h4{

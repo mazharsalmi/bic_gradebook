@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useEffect, useState} from "react";
 import ShareIcon from "@mui/icons-material/Share";
 import PrintIcon from "@mui/icons-material/Print";
 import SendToMobileIcon from "@mui/icons-material/SendToMobile";
@@ -24,7 +24,11 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import CircleIcon from '@mui/icons-material/Circle';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import SupervisorAccountIcon from '@mui/icons-material/SupervisorAccount';
+import LocalAtmIcon from '@mui/icons-material/LocalAtm';
+import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
 
+import GroupsIcon from '@mui/icons-material/Groups';
 
 const data = [
   {
@@ -72,32 +76,50 @@ const data = [
 ];
 const pdata = [
   {
-    name: "Phyton",
+    name: "BSCS",
     student: 15,
     fees: 16,
   },
   {
-    name: "angular",
+    name: "BSIT",
     student: 13,
     fees: 10,
   },
   {
-    name: "c#",
+    name: "BSSE",
     student: 16,
     fees: 15,
   },
   {
-    name: "c++",
+    name: "BS MATH",
     student: 33,
     fees: 11,
   },
   {
-    name: "js",
+    name: "BS ENGLISH",
     student: 23,
     fees: 13,
   },
 ];
 export default function Dashbord() {
+  const [count, setCount] = useState(0);
+  const [countT ,setCountT]=useState(0);
+  const [countP ,setCountP]=useState(0);
+  const [countD,setCountD]=useState(0);
+  useEffect(() => {
+    if(countD<19000){
+      setCountD(countD+35);
+    }
+    if(countP<2000){
+      setCountP(countP+5);
+    }
+    if(countT<1500){
+      setCountT(countT+4);
+    }
+    if (count<4000) {
+      setCount(count+10);
+    }
+  });
   return (
     <div className="data">
       <div className="feacter">
@@ -115,51 +137,37 @@ export default function Dashbord() {
         </button>
       </div>
       <Divider />
+      <div className="main-total">
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#90ee90'}}><FamilyRestroomIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Total Student</p>
+        <h2>{count}</h2>
+        </div> 
+      </div>
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#ADD8E6'}}><GroupsIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Total Teacher</p>
+        <h2>{countT}</h2>
+        </div> 
+      </div>
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#ffcccb '}}><SupervisorAccountIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Parents</p>
+        <h2>{countP}</h2>
+        </div> 
+      </div>
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#D3D3D3'}}><LocalAtmIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Expense</p>
+        <h2><span style={{color:'red'}}>$</span>{countD}</h2>
+        </div> 
+      </div></div>
       
-      <Grid container spacing={2}>
-        <Grid item xs={4} md={2}>
-          <div className="prestange">
-            <p>Total Students</p>
-            <h3>32.53%</h3>
-            <p><span style={{color:'red'}}><ArrowDropDownIcon/>-0.5%</span></p>
-          </div>
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <div className="prestange">
-            <p>Total Students</p>
-            <h3>32.53%</h3>
-            <p><span style={{color:'green'}}><ArrowDropUpIcon/>-0.5%</span></p>
-          </div>
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <div className="prestange">
-            <p>Total Students</p>
-            <h3>32.53%</h3>
-            <p><span style={{color:'red'}}><ArrowDropDownIcon/>-0.5%</span></p>
-          </div>
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <div className="prestange student-responsive">
-            <p>Total Students</p>
-            <h3>32.53%</h3>
-            <p><span style={{color:'green'}}><ArrowDropUpIcon/>-0.5%</span></p>
-          </div>
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <div className="prestange student-responsive">
-            <p>Total Students</p>
-            <h3>32.53%</h3>
-            <p><span style={{color:'red'}}><ArrowDropDownIcon/>-0.5%</span></p>
-          </div>
-        </Grid>
-        <Grid item xs={4} md={2}>
-          <div className="prestange student-responsive">
-            <p>Total Students</p>
-            <h3>32.53%</h3>
-            <p><span style={{color:'green'}}><ArrowDropUpIcon/>-0.5%</span></p>
-          </div>
-        </Grid>
-
+        <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
           <div className="total-student">
           <h4>Total Students</h4>
@@ -182,8 +190,6 @@ export default function Dashbord() {
             </div>
           </div>
           <div className="total-program">
-            <Box className='graph-responsive'>
-            <div>
             <ResponsiveContainer width="100%" height={100}>
               <PieChart >
                 <Pie
@@ -193,43 +199,22 @@ export default function Dashbord() {
                   cy="50%"
                   outerRadius={50}
                   fill="#8884d8"
+                  stroke="white"
                 />
               </PieChart>
               </ResponsiveContainer>
-            </div>
             <div className="text">
               <p>Total Program</p>
-              <h4>26.28%</h4>
-            </div>
-            </Box>
-            <Box className='graph-responsive'>
-             <div>
-             <ResponsiveContainer width="100%" height={100}>
-              <PieChart >
-                <Pie
-                  data={data}
-                  dataKey="uv"
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={50}
-                  fill="#8884d8"
-                />
-              </PieChart>
-              </ResponsiveContainer>
-            </div>
-            <div className="text">
-            <p>Total Program</p>
-            <h4>26.28%</h4>
-            </div>
-            </Box>
+              <h4>20</h4>
+            </div>           
           </div>
         </Grid>
         <Grid item xs={12} md={8}>
           <div className="perfromance">
             <div className="perfromance-text">
               <div className="p-leftside">
-                <h4>perfromance Line Chart</h4>
-                <h5>Lorem is simply dummy txt of the printing</h5>
+                <h4>Class Attendance</h4>
+                <h5>This Week  Attendance Graph</h5>
               </div>
               <div className="p-rightside">
               <span style={{color:'blue'}}><CircleIcon/></span> <li>This week</li>
@@ -242,7 +227,7 @@ export default function Dashbord() {
                   <XAxis dataKey="name" interval={"preserveStartEnd"} />
                   <YAxis />
                   <Line type="monotone" dataKey="student" stroke="red" />
-                  <Line type="monotone" dataKey="fees" stroke="green" />
+                  
                 </LineChart>
               </ResponsiveContainer>
             </div>
@@ -252,7 +237,7 @@ export default function Dashbord() {
           <div className="Market-Overview">
             <div className="market-text">
               <div className="market-left">
-                <h4>Market Overview</h4>
+                <h4>OUR COLLEGE SURVY</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
               </div>
               <div className="market-right">
