@@ -32,43 +32,57 @@ import GroupsIcon from '@mui/icons-material/Groups';
 
 const data = [
   {
+    college:"BSS",
+    year:2016,
     name: "Page A",
     uv: 4000,
     pv: 2400,
     amt: 2400,
   },
   {
+    college:"TNS",
+    year:2017,
     name: "Page B",
     uv: 3000,
     pv: 1398,
     amt: 2210,
   },
   {
+    college:"TEY",
+    year:2018,
     name: "Page C",
     uv: 2000,
     pv: 9800,
     amt: 2290,
   },
   {
+    college:"CC",
+    year:2019,
     name: "Page D",
     uv: 2780,
     pv: 3908,
     amt: 2000,
   },
   {
+    college:"DCSS",
+    year:2020,
     name: "Page E",
     uv: 1890,
     pv: 4800,
     amt: 2181,
   },
   {
+    college:"UCS",
+    year:2021,
     name: "Page F",
     uv: 2390,
     pv: 3800,
     amt: 2500,
   },
   {
-    name: "Page G",
+    college:"BNU",
+    year:2022,
+    name: "BNU",
     uv: 3490,
     pv: 4300,
     amt: 2100,
@@ -170,24 +184,19 @@ export default function Dashbord() {
         <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
           <div className="total-student">
-          <h4>Total Students</h4>
-          <div className="total-buttom">  
-          <div className="stuentleft">
-            
-              <p>Closed value</p>
+          <h4>Result</h4>
+          <div>
+            <ResponsiveContainer width="100%" height={150}>
+              <BarChart  data={pdata}>
               
-              <h2>32.53%</h2>
+              <YAxis dataKey="student" interval={"preserveStartEnd"} />
+                <XAxis dataKey="name" interval={"preserveStartEnd"} />
+
+                <Bar dataKey="student" fill="#E5E4E2" />
+              </BarChart>
+              </ResponsiveContainer>
             </div>
-            <div className="stuentright">
-              <div className="line-graph">
-                <ResponsiveContainer width={150} aspect={3}>
-                  <LineChart data={pdata}>
-                    <Line type="monotone" dataKey="student" stroke="red" />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            </div>
-            </div>
+          
           </div>
           <div className="total-program">
             <ResponsiveContainer width="100%" height={100}>
@@ -246,9 +255,7 @@ export default function Dashbord() {
             </div>
             <div className="dolor">
               <div className="dolor-left">
-                <h2>$36,2531.00</h2>
-                <h4>USD</h4>
-                <h4>(+1.37%)</h4>
+                <h2>This year</h2>
               </div>
               <div className="dolor-right">
               <span style={{color:'blue'}}><CircleIcon/></span> <li>This week</li>
@@ -256,10 +263,10 @@ export default function Dashbord() {
               </div>
             </div>
             <div >
-            <ResponsiveContainer width="100%" aspect={3}>
+            <ResponsiveContainer width="100%"  height="150" aspect={3}>
               <BarChart  data={data}>
-                <XAxis dataKey="name" />
-                <YAxis dataKey="uv" />
+                <XAxis dataKey="college" />
+                <YAxis dataKey="uv" fill="black" />
                 <Bar dataKey="uv" fill="#8884d8" />
               </BarChart>
               </ResponsiveContainer>
@@ -374,10 +381,10 @@ export default function Dashbord() {
             </div>
             <div>
             <ResponsiveContainer width="100%" height={300}>
-              <BarChart  data={data}>
+              <BarChart  data={pdata}>
                 <XAxis dataKey="name" interval={"preserveStartEnd"} />
 
-                <Bar dataKey="uv" fill="#8884d8" />
+                <Bar dataKey="student" fill="#8884d8" />
               </BarChart>
               </ResponsiveContainer>
             </div>

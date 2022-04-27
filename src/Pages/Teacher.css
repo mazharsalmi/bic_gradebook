@@ -1,0 +1,37 @@
+.prepare{
+    background-color: #F4F5F7;
+    padding-bottom: 2rem;
+    height: 100%;
+    margin-top: 0rem;
+    font-family: "Manrope", sans-serif;
+    
+}
+.list-of-teacher{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: start;
+    align-items: flex-start;
+    border-radius: 8px;
+    margin-left: 2rem;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 4px;
+    
+}
+.right-side-calendar{
+    padding: 16px;
+    background-color: white;
+    /* margin-left: 1rem; */
+    margin-right: 1rem;
+    border-radius: 1rem;
+
+}
+
+@media (max-width:900px) {
+    .prepare{
+        margin-top: 0rem;
+    }   
+    
+}

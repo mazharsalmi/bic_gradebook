@@ -12,11 +12,11 @@ import Alluser from "./Pages/Alluser";
 import MenuAssign from "./Pages/MenuAssign";
 import ScrollToTop from "./Components/ScroolBar"
 import DatePickers from "./Table/Calendar.js"
+import Teacher from "./Pages/Teacher"
 
 function App() {
   return (
-    <div className="app">
-  
+    <div className="app">  
     <ScrollToTop />
       <Sidebar>
       
@@ -26,6 +26,7 @@ function App() {
           <Route path="/grades" element={<Grades />} />
           <Route path="/prepare" element={<Prepare />} />
           <Route path="/class" element={<Classes/>}/>
+          <Route path='/teachertiming' element={<Teacher/>}/>
           <Route path="/subjects" element={<Subject/>}/>
           <Route path="/menuassignation" element={<Prepare/>}/>
           <Route path="/allusers" element={<Alluser/>}/>

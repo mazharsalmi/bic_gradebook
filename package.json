@@ -17,6 +17,8 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.20.0",
+    "axios": "^0.26.1",
     "chart.js": "^3.7.1",
     "framer-motion": "^6.2.8",
     "fullcalendar": "^5.10.2",

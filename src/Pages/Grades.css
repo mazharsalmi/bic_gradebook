@@ -12,8 +12,12 @@
     /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 12px;
+    justify-content: center;
+    
 }
-
+label{
+    margin-bottom: 8px;
+}
 .student-grades{
     background-color: white;
     margin-left: 4rem;
@@ -34,8 +38,9 @@
 }
 .label1{
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-right: 1rem;
+    flex-direction: column;
 }
 .table-heading{
     display: flex;
@@ -55,6 +60,35 @@
     background-color: blue !important;
     color: white !important;
 }
+.text-aria{
+    display: flex;
+    justify-content: space-between;
+}
+.text-aria input{
+    width: 4rem;
+    height: 2rem;
+}
+table{
+    font-family: arial, sans-serif;
+
+    margin-top: 1rem;
+   
+    }
+td ,th{
+
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 8px;
+
+        
+    }
+
+    .commit{
+        
+        width: 3rem !important;
+        padding: 0.5rem;
+    }
 @media (max-width:900px) {
     .student-grades{
         padding: 10px;
