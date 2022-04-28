@@ -41,11 +41,11 @@ export default function TeacherCalender() {
   ]}
 />
     </Col>
-    <Modal title="Basic Modal" visible={isModalVisible} onOk={Okhandel} onCancel={handleCancel} className='popup'>
+{isModalVisible ?(    <Modal title="Basic Modal" visible={isModalVisible} onOk={Okhandel} onCancel={handleCancel} className='popup'>
     <p>Class: F16BS IT2016</p>
     <p>Subject:IT</p>
     <p>Room:23</p>
-      </Modal>
+      </Modal>):("")}
     </>
     
   )

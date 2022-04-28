@@ -72,16 +72,27 @@ table{
     font-family: arial, sans-serif;
 
     margin-top: 1rem;
-   
+    width: 100%;   
     }
-td ,th{
+table th{
 
         justify-content: center;
         text-align: center;
         align-items: center;
+        padding: 8px;        
+    }
+    table td{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
         padding: 8px;
-
-        
+    }
+    .submit{
+        background-color: blue;
+        color: white;
+        position: absolute;
+        right: 7rem;
+        padding: 2px 5px;
     }
 
     .commit{

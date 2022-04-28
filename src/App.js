@@ -13,6 +13,7 @@ import MenuAssign from "./Pages/MenuAssign";
 import ScrollToTop from "./Components/ScroolBar"
 import DatePickers from "./Table/Calendar.js"
 import Teacher from "./Pages/Teacher"
+import UserGroup from "./Pages/UserGroup";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path='/teachertiming' element={<Teacher/>}/>
           <Route path="/subjects" element={<Subject/>}/>
           <Route path="/menuassignation" element={<Prepare/>}/>
+          <Route path="/usergroup" element={<UserGroup/>}/>
           <Route path="/allusers" element={<Alluser/>}/>
           
           <Route path="/reporting" element={<Reporting />} />

@@ -4,7 +4,6 @@ import grade from "./Grades.css"
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { SentimentSatisfiedAltSharp } from '@mui/icons-material';
-
 const handelbutton = () => {
 console.log('hello');
 };
@@ -18,19 +17,53 @@ export default function Grades() {
       
       setData(val.target.value);
       console.log(data);
-      if(data >90) {
+      if(data >90 && data <=100 ) {
         setData('A+')
         
       }
-      else if (data >80) {
+      else if (data >80 && data <=90) {
         setData('A');
       }
-      else if (data >70) {
+      else if (data >70 && data <=80) {
         setData('B+');
         
       }
     }
-    
+    const Data = [
+      {
+          Sid:'1',
+          Sname:'Mazhar iqbal',
+          university:'university of london',
+          program:'computer',
+          section:'2022'
+      },
+      {
+          Sid:'2',
+          Sname:'Fahad Ali',
+          university:'university of london',
+          program:'IT',
+          section:'2022'
+      },
+      {
+        Sid:'3',
+        Sname:'Sohail Abbas',
+        university:'university of london',
+        program:'Computer',
+        section:'2020'
+    },
+    {
+      Sid:'4',
+      Sname:'Ali Ahmad',
+      university:'university of london',
+      program:'IT',
+      section:'2020'
+  },
+     
+    ];
+    const [myArray ,setMyArray]=useState(Data);
+    const RemoveArry=()=>{
+      setMyArray([]);
+    }
   return (
     <div className='grades'>
     <Grid container spacing={2}>
@@ -101,29 +134,42 @@ export default function Grades() {
           
             <Divider style={{marginTop:'1rem'}}/>
             <table>
-            <tr><th>Student Id</th>
+            
+            
+            { classData ? (
+           
+              <table>
+              <tr><th>Student Id</th>
             <th>Student Name</th>
             <th>University</th>
             <th>Program</th>
             <th>Section</th>
             <th>Enter Marks</th>
-            <th>Grade</th>
-            <th>Comment</th>
+            <th >Grade</th>
+            <th >Comment</th>
             </tr>
+            {myArray.map((curElm)=>{
+              return <tr>
+              <td>{curElm.Sid} </td>
+              <td>
+              {curElm.Sname} </td>
+              <td>
+              {curElm.university} </td>
+              <td>
+              {curElm.program} </td>
+              <td>
+              {curElm.section} </td>
+              <td><input type="number" className='commit' onChange={getData} /></td>
+              <td>
+              <input type="text" className='commit' value={data}></input>
+              </td>
+              <td><input type="text" className='commit' /></td>
             
-            { classData ? (
-            
-              <tr>  <td>1</td>
-            <td>sulaman naqvi</td>
-            <td>University of london</td>
-            <td>computer</td>
-            <td>2022</td>
-            <td><input type="number" className='commit' onChange={getData} /></td>
-            <td>
-            <input type="text" className='commit' value={data}></input>
-            </td>
-            <td><input type="text" className='commit' /></td>
-            </tr>
+              </tr>
+              
+            })}
+            <button className='submit' onClick={RemoveArry}>submit</button>
+            </table>
             ):
             ("")
           }

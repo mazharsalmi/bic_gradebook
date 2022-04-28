@@ -1,0 +1,32 @@
+.usergroup{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    
+}
+.userData{
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 2rem !important;
+    margin-right: 3rem !important;
+    display: flex;
+    align-items: center;
+    padding: 0rem 1rem;
+    
+}
+.manage-roles Button{
+    border: 1px  solid black;
+    margin-right: 5px;
+}
+.active-status{
+    background-color: #51B1E1;
+    width: 4rem;
+    padding: 0%;
+ 
+}
+.deactive-status{
+    background-color: #F95F53;
+    width: 6rem;
+    padding: 0%;
+}
