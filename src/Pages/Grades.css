@@ -5,6 +5,8 @@
     height: 100%;
     margin-top: 0rem;
     font-family: "Manrope", sans-serif;
+    justify-content: center;
+    display: flex;
 }
 .data1{
     display: flex;
@@ -13,7 +15,9 @@
     align-items: center;
     margin-bottom: 12px;
     justify-content: center;
-    
+    align-items: flex-end;    
+    width: auto;
+
 }
 label{
     margin-bottom: 8px;
@@ -28,13 +32,15 @@ label{
     margin-bottom: 4rem;
 }
 .sort{
-    background-color: rgb(125, 125, 223) !important;
+    background-color: #51B1E1 !important;
     padding: 8px !important;
     margin-left: 5px !important;
     color: white !important;
-    border-radius: 50% !important;
+    border-radius: 8px !important;
     font-size: small !important;
     font-weight: 200 !important;
+    
+
 }
 .label1{
     display: flex;
@@ -59,6 +65,7 @@ label{
 .table-heading Button:hover{
     background-color: blue !important;
     color: white !important;
+    
 }
 .text-aria{
     display: flex;
@@ -88,11 +95,18 @@ table th{
         padding: 8px;
     }
     .submit{
-        background-color: blue;
-        color: white;
+        
         position: absolute;
-        right: 7rem;
-        padding: 2px 5px;
+        right: 9.5rem;
+        background-color: #51B1E1 !important;
+    padding: 8px !important;
+    margin-left: 5px !important;
+    color: white !important;
+    border-radius: 8px !important;
+    font-size: small !important;
+    font-weight: 200 !important;
+    margin-top: 2.5rem;
+        
     }
 
     .commit{
@@ -106,10 +120,20 @@ table th{
         margin-left: 1rem;
         margin-right: 1rem;
         margin-bottom: 1rem;
-    }
+            width: auto !important;
+        
+        }
+    
     .data1{
         flex-direction: column;
 
+    }
+    label{
+        margin-bottom: 8px;
+        margin-left: 1rem;
+    }
+    select{
+        margin-left: 1rem;
     }
     .label1{
         display: flex;
@@ -118,6 +142,7 @@ table th{
     }
     .sort{
         display: none;
+        background-color: #51B1E1;
     }
     .grades{
         margin-top: 0rem;

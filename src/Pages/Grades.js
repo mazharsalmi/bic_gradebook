@@ -63,11 +63,12 @@ export default function Grades() {
     const [myArray ,setMyArray]=useState(Data);
     const RemoveArry=()=>{
       setMyArray([]);
+      setClassData(false);
     }
   return (
     <div className='grades'>
     <Grid container spacing={2}>
-        <Grid item xs={12} md={12} >
+        <Grid item xs={12} md={12} style={{justifyContent:'center'}}>
         <div className='student-grades'>
         <h3>Enter Student Grades</h3>
         <div className='data1'>

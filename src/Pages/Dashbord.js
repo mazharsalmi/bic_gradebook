@@ -122,7 +122,7 @@ export default function Dashbord() {
   const [countD,setCountD]=useState(0);
   useEffect(() => {
     if(countD<19000){
-      setCountD(countD+35);
+      setCountD(countD+45);
     }
     if(countP<2000){
       setCountP(countP+5);

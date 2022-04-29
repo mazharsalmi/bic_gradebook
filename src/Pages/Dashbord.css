@@ -68,6 +68,7 @@ button.avc{
 .main-total{
     display: flex;
     justify-content: space-between;
+
 }
 .new-total{
     background-color: white;
@@ -638,5 +639,19 @@ li{
     }
 .todo{
     margin: 0px 8px;
+}
+.main-total{
+    display: block;
+}
+.new-total{
+    
+   width: auto;
+   
+}
+.right-side-of-stundent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: ;
 }
 }

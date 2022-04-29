@@ -244,7 +244,7 @@ export default function SearchAppBar({ children }) {
             <div  className={name ? "name-of-user header" : "name-of-user"}>
               <h1>
                 Good Morning ,{" "}
-                <span style={{ color: "black" }}>Salman Naqvi</span>
+                <span style={{ color: "black" }}>Mazhar Iqbal</span>
               </h1>
               <h3>Students performance summary this week</h3>
             </div>
