@@ -9,8 +9,7 @@
 .list-of-teacher{
     display: flex;
     flex-direction: column;
-    background-color: white;
-    justify-content: start;
+   justify-content: start;
     align-items: flex-start;
     border-radius: 8px;
     margin-left: 2rem;
