@@ -31,6 +31,10 @@
 @media (max-width:900px) {
     .prepare{
         margin-top: 0rem;
+    }
+    .list-of-teacher{
+        margin-left: 0%;
+        padding-left: 0%;
     }   
     
 }

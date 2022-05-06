@@ -114,6 +114,10 @@ table th{
         width: 3rem !important;
         padding: 0.5rem;
     }
+    .table{
+        display: flex;
+        overflow-x: auto;
+    }
 @media (max-width:900px) {
     .student-grades{
         padding: 10px;

@@ -134,7 +134,7 @@ export default function Grades() {
         </div>
           
             <Divider style={{marginTop:'1rem'}}/>
-            <table>
+            <table className='table'>
             
             
             { classData ? (

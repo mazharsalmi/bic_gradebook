@@ -14,6 +14,7 @@ import ScrollToTop from "./Components/ScroolBar"
 import DatePickers from "./Table/Calendar.js"
 import Teacher from "./Pages/Teacher"
 import UserGroup from "./Pages/UserGroup";
+import Exame from "./Pages/Exame";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/menuassignation" element={<Prepare/>}/>
           <Route path="/usergroup" element={<UserGroup/>}/>
           <Route path="/allusers" element={<Alluser/>}/>
+          <Route path="/exam" element={<Exame/>}/>
           
           <Route path="/reporting" element={<Reporting />} />
         </Routes>
