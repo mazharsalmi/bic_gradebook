@@ -10,7 +10,6 @@
     position: absolute;
     z-index: 100;
     justify-content: space-between;
-    
 
     
 }
@@ -27,6 +26,7 @@
     height: auto;
     z-index: 999;
     position: relative;
+    justify-content: center!important;
 
     
     display: flex;
@@ -95,7 +95,7 @@ select{
     text-decoration: none;
 }
 .name-of-user{
-   
+   /* background-color: red; */
 
 }
 
@@ -122,6 +122,9 @@ select{
 }
 .heading{
     color: white;
+}
+.scrolbar{
+    /* justify-content: space-around; */
 }
 @media (max-width:900px) {
     .select-date{
@@ -150,7 +153,9 @@ select{
         display: none;
     }
     
-    
+    .header-bg{
+        justify-content: space-between !important;
+    }
 }
 .search{
         
@@ -171,7 +176,7 @@ select{
     }
     
 }
-@media (max-width:600px) {
+@media (max-width:400px) {
     .left-side-navbar .aavatar{
         display: none;
     }

@@ -25,6 +25,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logowhite.png";
 import Date from "../Table/Date";
+import fb from "../images/myfb.jpg"
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -79,10 +80,6 @@ export default function SearchAppBar({ children }) {
   const RemoveSidebar =(e)=>{
       setShow(false)
 
-  }
-
-  const posss={
-    position:"fixed"
   }
   const [name, setName] = useState(false);
   function hideName() {
@@ -229,7 +226,7 @@ export default function SearchAppBar({ children }) {
 
       <AppBar className="responsive-bar"  elevation={0}>
         <Toolbar
-        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000,top:0,
+        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000,top:0, justifyContent:"space-between", paddingLeft:'0rem',
       }}
           className={color ? "responsive-bar header-bg" : "responsive-bar"}
         >
@@ -239,7 +236,7 @@ export default function SearchAppBar({ children }) {
             component="div"
             className="left-side-navbar"
           >
-            <Avatar className="aavatar" />
+            <Avatar alt="avert" src={fb} className="aavatar" />
 
             <div  className={name ? "name-of-user header" : "name-of-user"}>
               <h1>
@@ -276,7 +273,7 @@ export default function SearchAppBar({ children }) {
           <div className="nav-right-icon">
             <MailOutlineOutlinedIcon className="nav-img" />
             <NotificationsOutlinedIcon className="nav-img" />
-            <Avatar alt="" src="" className="nav-img right-avater" />
+            <Avatar alt="avert" src={fb} className="nav-img right-avater" />
             <MenuIcon className="menu-icon nav-img" onClick={handleClicks} />
           </div>
         </Toolbar>

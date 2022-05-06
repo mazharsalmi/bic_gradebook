@@ -1,12 +1,7 @@
 import { Grid,Button, Divider } from '@mui/material'
 import React from 'react' 
 import grade from "./Grades.css"
-import { useState, useEffect } from 'react';
-import axios from 'axios';
-import { SentimentSatisfiedAltSharp } from '@mui/icons-material';
-const handelbutton = () => {
-console.log('hello');
-};
+import { useState } from 'react';
 export default function Grades() {
   const [classData, setClassData] = useState(false);
   const [data ,setData]=useState('');
@@ -35,7 +30,7 @@ export default function Grades() {
           Sname:'Mazhar iqbal',
           university:'university of london',
           program:'computer',
-          section:'2022'
+          section:'2022',
       },
       {
           Sid:'2',
