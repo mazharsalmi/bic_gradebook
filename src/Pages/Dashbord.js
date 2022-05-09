@@ -327,35 +327,6 @@ export default function Dashbord() {
           </div>
         </Grid>
         <Grid item xs={12} md={8}>
-          <div className="Enhance">
-            <h2>Enhance your Campaign for better outreach</h2>
-            <Button variant="contained">Upgrade Account</Button>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <div className="circul-chart">
-            <h4>Type By Amount</h4>
-            <div className="piegraph">
-              <PieChart width={100} height={177}>
-                <Pie
-                  data={data}
-                  dataKey="uv"
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={50}
-                  fill="#8884d8"
-                />
-              </PieChart>
-            </div>
-            <ul>
-            <span style={{color:'red'}}><CircleIcon/></span> <li> Total</li>
-            <span style={{color:'blue'}}><CircleIcon/></span> <li>Net</li>
-            <span style={{color:'green'}}><CircleIcon/></span> <li>Gross</li>
-            <span style={{color:'pink'}}><CircleIcon/></span> <li>AVG</li>
-            </ul>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={8}>
           <div className="request">
             <div className="head">
               <div className="head-left">
@@ -374,177 +345,152 @@ export default function Dashbord() {
           </div>
         </Grid>
         <Grid item xs={12} md={4}>
-          <div className="Leave-Report">
-            <div className="leave-head">
-              <h4>Leave Report</h4>
-              <Button variant="contained">Month wise</Button>
-            </div>
-            <div>
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart  data={pdata}>
-                <XAxis dataKey="name" interval={"preserveStartEnd"} />
+    <div className="circul-chart">
+      <h4>Type By Amount</h4>
+      <div className="piegraph">
+        <PieChart width={100} height={177}>
+          <Pie
+            data={data}
+            dataKey="uv"
+            cx="50%"
+            cy="50%"
+            outerRadius={50}
+            fill="#8884d8"
+          />
+        </PieChart>
+      </div>
+      <ul>
+      <span style={{color:'red'}}><CircleIcon/></span> <li> Total</li>
+      <span style={{color:'blue'}}><CircleIcon/></span> <li>Net</li>
+      <span style={{color:'green'}}><CircleIcon/></span> <li>Gross</li>
+      <span style={{color:'pink'}}><CircleIcon/></span> <li>AVG</li>
+      </ul>
+    </div>
+  </Grid>
+  <Grid item xs={12} md={4}>
+  <div className="Leave-Report">
+    <div className="leave-head">
+      <h4>Leave Report</h4>
+      <Button variant="contained">Month wise</Button>
+    </div>
+    <div>
+    <ResponsiveContainer width="100%" height={300}>
+      <BarChart  data={pdata}>
+        <XAxis dataKey="name" interval={"preserveStartEnd"} />
 
-                <Bar dataKey="student" fill="#8884d8" />
-              </BarChart>
-              </ResponsiveContainer>
-            </div>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <div className="recent">
-            <h4>Recent Events</h4>
-            <div className="event">
-              <p>Change in Directors</p>
-              <div className="date-event">
-                <p>
-                  <DateRangeIcon />
-                  Mar 14, 2019
-                </p>
-              </div>
-              <Divider />
-            </div>
-            <div className="event">
-              <p>Change in Directors</p>
-              <div className="date-event">
-                <p>
-                  <DateRangeIcon style={{marginRight:'8px'}}/>
-                  Mar 14, 2019
-                </p>
-              </div>
-              <Divider />
-            </div>
-            <div className="event">
-              <p>Change in Directors</p>
-              <div className="date-event">
-                <p>
-                  <DateRangeIcon style={{marginRight:'8px'}}/>
-                  Mar 14, 2019
-                </p>
-              </div>
-              <Divider />
-            </div>
-            <div className="event">
-              <p>Change in Directors</p>
-              <div className="date-event">
-                <p>
-                  <DateRangeIcon style={{marginRight:'8px'}}/>
-                  Mar 14, 2019
-                </p>
-              </div>
-            </div>
-            <a href="www.google.com">
-              Show All <ArrowForwardIcon />
-            </a>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <div className="Activities">
-            <div className="Activities-head">
-              <h4>Activities</h4>
-              <p>20 finished, 5 remaining</p>
-            </div>
-            <li className="line">
-              <p>
-                <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-                task
-              </p>
-              <p>Just now</p>
-            </li>
-            <li className="line">
-              <p>
-                <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-                task
-              </p>
-              <p>1hr</p>
-            </li>
-            <li className="line">
-              <p>
-                <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-                task
-              </p>
-              <p>1hr</p>
-            </li>
-            <li className="line">
-              <p>
-                <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-                task
-              </p>
-              <p>1hr</p>
-            </li>
-            <li className="line">
-              <p>
-                <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-                task
-              </p>
-              <p>1hr</p>
-            </li>
-            <li className="line">
-              <p>
-                <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-                task
-              </p>
-              <p>1hr</p>
-            </li>
-            <li className="line">
-              <p>
-                <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-                task
-              </p>
-              <p>1hr</p>
-            </li>
-            <a href="www.google.com">
-              Show All <ArrowForwardIcon />
-            </a>
-          </div>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <div className="top-performer">
-            <h4>Top Performer</h4>
-            <div className="clint">
-              <div className="clint-left">
-                <Avatar />
-                <div className="name">
-                  <h6>Brandon Washington</h6>
-                  <p>162543</p>
-                </div>
-              </div>
-              <div className="clint-right"> 1hr ago</div>
-            </div>
-            <Divider />
-            <div className="clint">
-              <div className="clint-left">
-                <Avatar />
-                <div className="name">
-                  <h6>Brandon Washington</h6>
-                  <p>162543</p>
-                </div>
-              </div>
-              <div className="clint-right"> 1hr ago</div>
-            </div>
-            <Divider />
-            <div className="clint">
-              <div className="clint-left">
-                <Avatar />
-                <div className="name">
-                  <h6>Brandon Washington</h6>
-                  <p>162543</p>
-                </div>
-              </div>
-              <div className="clint-right"> 1hr ago</div>
-            </div>
-            <Divider />
-            <div className="clint">
-              <div className="clint-left">
-                <Avatar />
-                <div className="name">
-                  <h6>Brandon Washington</h6>
-                  <p>162543</p>
-                </div>
-              </div>
-              <div className="clint-right"> 1hr ago</div>
-            </div>
-          </div>
-        </Grid>
+        <Bar dataKey="student" fill="#8884d8" />
+      </BarChart>
+      </ResponsiveContainer>
+    </div>
+  </div>
+</Grid>
+<Grid item xs={12} md={4}>
+<div className="recent">
+  <h4>Recent Events</h4>
+  <div className="event">
+    <p>Change in Directors</p>
+    <div className="date-event">
+      <p>
+        <DateRangeIcon />
+        Mar 14, 2019
+      </p>
+    </div>
+    <Divider />
+  </div>
+  <div className="event">
+    <p>Change in Directors</p>
+    <div className="date-event">
+      <p>
+        <DateRangeIcon style={{marginRight:'8px'}}/>
+        Mar 14, 2019
+      </p>
+    </div>
+    <Divider />
+  </div>
+  <div className="event">
+    <p>Change in Directors</p>
+    <div className="date-event">
+      <p>
+        <DateRangeIcon style={{marginRight:'8px'}}/>
+        Mar 14, 2019
+      </p>
+    </div>
+    <Divider />
+  </div>
+  <div className="event">
+    <p>Change in Directors</p>
+    <div className="date-event">
+      <p>
+        <DateRangeIcon style={{marginRight:'8px'}}/>
+        Mar 14, 2019
+      </p>
+    </div>
+  </div>
+  <a href="www.google.com">
+    Show All <ArrowForwardIcon />
+  </a>
+</div>
+</Grid>
+<Grid item xs={12} md={4}>
+<div className="Activities">
+  <div className="Activities-head">
+    <h4>Activities</h4>
+    <p>20 finished, 5 remaining</p>
+  </div>
+  <li className="line">
+    <p>
+      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
+      task
+    </p>
+    <p>Just now</p>
+  </li>
+  <li className="line">
+    <p>
+      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
+      task
+    </p>
+    <p>1hr</p>
+  </li>
+  <li className="line">
+    <p>
+      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
+      task
+    </p>
+    <p>1hr</p>
+  </li>
+  <li className="line">
+    <p>
+      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
+      task
+    </p>
+    <p>1hr</p>
+  </li>
+  <li className="line">
+    <p>
+      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
+      task
+    </p>
+    <p>1hr</p>
+  </li>
+  <li className="line">
+    <p>
+      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
+      task
+    </p>
+    <p>1hr</p>
+  </li>
+  <li className="line">
+    <p>
+      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
+      task
+    </p>
+    <p>1hr</p>
+  </li>
+  <a href="www.google.com">
+    Show All <ArrowForwardIcon />
+  </a>
+</div>
+</Grid> 
       </Grid>
     </div>
   );
