@@ -351,10 +351,6 @@ font-size: 16px;
 ul span{
     margin-right: 5px;
 }
-/* ul li{
-    padding: 1rem;
-    margin-left: 10px;
-} */ */
 .text p{padding: 16px;}
 .request{
     background-color:white;
@@ -368,8 +364,7 @@ ul span{
 .head{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-}
+ }
 .head-left h4{
     margin-bottom: 2px;
 
@@ -652,7 +647,6 @@ li{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: ;
 }
 #par{
     margin-right: 2rem;}

@@ -11,7 +11,7 @@
 .data1{
     display: flex;
     background-color: white;
-    /* justify-content: space-between; */
+   
     align-items: center;
     margin-bottom: 12px;
     justify-content: center;

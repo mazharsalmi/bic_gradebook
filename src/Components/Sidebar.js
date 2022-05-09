@@ -17,7 +17,6 @@ import { padding } from "@mui/system";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 export default function Sidebar({ children }) {
   const [isOpen, setIsOpen] = useState(true);
-  // const toggle =()=> setIsOpen(!isOpen);
   const [dropdown, setDropdown] = useState(false);
   const [dropclass ,setDropclass]=useState(false);
   const [dropsubject ,setDropsubject] =useState(false);

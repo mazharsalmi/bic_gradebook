@@ -9,8 +9,6 @@
     font-family: "Manrope", sans-serif;
 }
 .sidebar1{
-    /* width: 70px; */
-    /* position: sticky; */
     z-index: 100;
     background-color: white;
     color: black;
@@ -58,8 +56,6 @@ a{
     display: flex;
     color: white;
     gap: 10px;
-    /* justify-content: space-between; */
-    /* text-align: center; */
     padding: 10px 35px;
     align-items: center;
     font-weight: bold;
@@ -86,7 +82,7 @@ a{
 .mobile-link {
     color: white;
     gap: 10px;
-    /* justify-content: space-between; */
+   
     text-align: center;
     padding: 10px 8px;
     padding: auto;
