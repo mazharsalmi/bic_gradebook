@@ -529,6 +529,10 @@ li{
         width:'200';
          height:'200';
     }
+    .recent{
+       
+        top: -20rem;
+    }
     .data{
         margin-top: 0rem;
     }
@@ -609,7 +613,7 @@ li{
         margin-top: 6rem;
     }
     .circul-chart{
-        margin-top: -6rem !important;
+        margin-top: 0rem !important;
         margin: 0px 8px;
     }
     .Leave-Report{
@@ -652,6 +656,10 @@ li{
 }
 #par{
     margin-right: 2rem;}
+    .Activities{
+        top: -20rem;
+
+    }
 }
 @media (min-width:900px) and (max-width:1360px) {
     .Activities{
