@@ -12,7 +12,43 @@
     margin-left: 2rem;
     margin-right: 2rem;
     padding: 16px;
+    margin-top: 1rem;
     
+}
+.classSelect{
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between; 
+}
+.leftsideofclass{
+    background-color: white;
+    width: 100%;
+    margin-right: 1rem;
+    border-radius: 5px;
+    padding: 16px;
+}
+.rightsideofclass{
+    background-color: white;
+    width: 100%;
+    border-radius: 5px;
+    padding: 16px;
+
+}
+.basic{
+    display: flex;
+    justify-content: space-between;
+
+}
+.lbasic{
+    margin-right: 1rem;
+}
+.lbasic label{
+    margin-bottom: 1rem;
 }
 .class-list h4{
     margin: 0%;
@@ -22,6 +58,12 @@
     border: 1px solid black;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.addclass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 @media (max-width:900px) {
     .classes{

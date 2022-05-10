@@ -661,9 +661,9 @@ li{
 
     }
 }
-@media (min-width:900px) and (max-width:1360px) {
+@media (min-width:900px) and (max-width:2360px) {
     .Activities{
-        top: -36rem;
+        top: -36rem !important;
     }
     
 }

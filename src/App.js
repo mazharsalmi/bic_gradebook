@@ -15,6 +15,7 @@ import DatePickers from "./Table/Calendar.js"
 import Teacher from "./Pages/Teacher"
 import UserGroup from "./Pages/UserGroup";
 import Exame from "./Pages/Exame";
+import StudentTime from "./Pages/StudentTime";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/usergroup" element={<UserGroup/>}/>
           <Route path="/allusers" element={<Alluser/>}/>
           <Route path="/exam" element={<Exame/>}/>
+          <Route path="/studenttiming" element={<StudentTime/>}/>
           
           <Route path="/reporting" element={<Reporting />} />
         </Routes>

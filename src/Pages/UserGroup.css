@@ -4,6 +4,11 @@
     justify-content: center;
     padding: 24px;
     
+
+    
+}
+.tabaleData{
+    font-size: 0.812rem;
 }
 .userData{
     background-color: white;
@@ -13,22 +18,43 @@
     display: flex;
     align-items: center;
     padding: 0rem 1rem;
+    font-size: 14px !important;
     
+}
+.tabelHeading{
+    font-size: 14px !important;
+    border-top: 0;
+    border-bottom-width: 1px;
+    font-weight: 600;
+    font-size: .875rem;
+    color: #212529;
 }
 .manage-roles Button{
     border: 1px  solid black;
     margin-right: 5px;
+    padding: 8px 18px;
+}
+.manage-roles Button:hover{
+    background-color: blue;
+    color: white;
 }
 .active-status{
     background-color: #51B1E1;
     width: 4rem;
-    padding: 0%;
+    padding: 6px 9px;
+    color: white;
+    justify-content: center;
+    display: flex;
+
  
 }
 .deactive-status{
     background-color: #F95F53;
     width: 6rem;
-    padding: 0%;
+    padding: 6px 9px;
+    color: white;
+    justify-content: center;
+    display: flex;
 }
 .manage-roles .icon-btn{
     display: none;

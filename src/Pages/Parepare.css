@@ -6,6 +6,16 @@
     font-family: "Manrope", sans-serif;
     
 }
+.showresult {
+    border: 1px  solid black !important;
+    margin-right: 5px;
+    padding: 14px 24px;
+    
+}
+.showresult:hover{
+    background-color: blue;
+    color: white;
+}
 .left-side-calendar{
     padding: 16px;
     border-left: 3px solid blue;

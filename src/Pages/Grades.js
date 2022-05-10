@@ -11,7 +11,6 @@ export default function Grades() {
     {
       
       setData(val.target.value);
-      console.log(data);
       if(data >90 && data <=100 ) {
         setData('A+')
         
@@ -90,8 +89,8 @@ export default function Grades() {
               className="select"
             >
               <option selected>BS Computer</option>
-              <option value="1">Bs physics</option>
-              <option value="2">Bs math</option>
+              <option value="1">Bs Physics</option>
+              <option value="2">Bs Math</option>
               <option value="3">BSIT</option>
             </select>
         
@@ -119,8 +118,8 @@ export default function Grades() {
               className="select"
             >
               <option selected>Subject</option>
-              <option value="1">math</option>
-              <option value="2">phy</option>
+              <option value="1">Math</option>
+              <option value="2">Phy</option>
               <option value="3">Eng</option>
             </select>
         
