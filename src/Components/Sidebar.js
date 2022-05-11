@@ -86,38 +86,44 @@ export default function Sidebar({ children }) {
               </div>
               <div className="link_text">Grades Entry</div>
             </NavLink>
-            <NavLink to="/prepare" className="link" onClick={RemoveMenu}>
-              <div className="icon">
-                <DateRangeIcon />
-              </div>
-              <div className="link_text">Prepare Result</div>
-            </NavLink>
+          
             <div className="link" onClick={handleDropdown } >
             <div className="icon">
-                <AutoGraphIcon />
+            <DateRangeIcon />
               </div>
-              <div className="link_text">
-                Reporting <ArrowRightIcon className="arrow" />
-              </div></div>
+              
+              <div className="link_text">Prepare Result</div>
+            </div>
             
             {dropdown ? (
               <motion.div>
-                <ul
-                className="menu-drop"
-                  
-                >
-                <li><NavLink to="/" className="dropdown" onClick={RemoveMenu}>
-                DashBoard
-             </NavLink>
-             </li>
-             <li><NavLink to="/grades" className="dropdown" onClick={RemoveMenu}>
-                Grades
-             </NavLink>
-             </li>
-             <li><NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
-                Prepare
-             </NavLink>
-             </li>
+                <ul className="menu-drop">
+                <li>
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
+                Campus Wise Result
+                </NavLink>
+                </li>
+                <li>
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
+                Qualification Wise Result
+                </NavLink>
+                </li>
+                <li>
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
+                Class Wise Result
+                </NavLink>
+                </li>
+                <li>
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
+                Subject Wise Result
+                </NavLink>
+                </li>
+                <li>
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
+                Student Wise Result
+                </NavLink>
+                </li>
+                
                   
                 </ul>
               </motion.div>
@@ -154,18 +160,9 @@ export default function Sidebar({ children }) {
                   
                 >
                 <li><NavLink to="/class" className="dropdown" onClick={RemoveMenu}>
-                Class
+                Class list
              </NavLink>
              </li>
-             <li><NavLink to="/grades" className="dropdown" onClick={RemoveMenu}>
-                Grades
-             </NavLink>
-             </li>
-             <li><NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
-                Prepare
-             </NavLink>
-             </li>
-                  
                 </ul>
               </div>
             ) : (
@@ -187,18 +184,10 @@ export default function Sidebar({ children }) {
                   
                 >
                 <li><NavLink to="/subjects" className="dropdown" onClick={RemoveMenu}>
-                Subjects
+                Subjects list
              </NavLink>
              </li>
-             <li><NavLink to="/grades" className="dropdown" onClick={RemoveMenu}>
-                Grades
-             </NavLink>
-             </li>
-             <li><NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
-                Prepare
-             </NavLink>
-             </li>
-                  
+          
                 </ul>
               </div>
             ) : (
@@ -225,19 +214,15 @@ export default function Sidebar({ children }) {
                 className="menu-drop"
                   
                 >
-                <li><NavLink to="/unlivesities" className="dropdown" onClick={RemoveMenu}>
-                Unlivesities
+                <li><NavLink to="/offerprogram" className="dropdown" onClick={RemoveMenu}>
+                Unlivesities list
              </NavLink>
              </li>
-             <li><NavLink to="/grades" className="dropdown" onClick={RemoveMenu}>
-                Grades
+             <li><NavLink to="/university" className="dropdown" onClick={RemoveMenu}>
+                Offer Program
              </NavLink>
              </li>
-             <li><NavLink to="/prepare" className="dropdown" onClick={RemoveMenu}>
-                Prepare
-             </NavLink>
-             </li>
-                  
+                
                 </ul>
               </div>
             ) : (

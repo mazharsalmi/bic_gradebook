@@ -7,7 +7,7 @@ export default function Subject() {
     <div className='classes'>
     <div className='class-list'>
     <h4> Class Subject</h4>
-    <Button variant='Outline'> Create New Subject</Button>
+    <Button  className='btn-style'variant='Outline'> Create New Subject</Button>
     <GradeEnter/>
     </div>
     </div>

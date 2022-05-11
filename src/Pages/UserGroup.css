@@ -64,6 +64,14 @@
     align-items: center !important;
     display: flex;
 }
+.btn-style{
+    background-color: blue !important;
+    color: white !important;
+    margin-top: 5px !important;
+}
+.btn-style:hover{
+    background-color: red!important;
+}
 
 @media (max-width:900px) {
     .userData{

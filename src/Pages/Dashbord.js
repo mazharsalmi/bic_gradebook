@@ -90,29 +90,39 @@ const data = [
 ];
 const pdata = [
   {
-    name: "BSCS",
-    student: 15,
-    fees: 16,
+    BBAmarks: 55,
+    BBAmarks: 80,
+    IMMC: 69,
+    IBA: 51,
+    Sid: 1,
   },
   {
-    name: "BSIT",
-    student: 13,
-    fees: 10,
+    BBAmarks: 89,
+    IMMC: 88,
+    IBA: 73,
+    Smarks: 60,
+    Sid: 2,
   },
   {
-    name: "BSSE",
-    student: 16,
-    fees: 15,
+    BBAmarks: 57,
+    IMMC: 66,
+    IBA: 45,
+    Smarks: 66,
+    Sid: 3,
   },
   {
-    name: "BS MATH",
-    student: 33,
-    fees: 11,
+    BBAmarks: 45,
+    IMMC: 85,
+    IBA: 70,
+    Smarks: 77,
+    Sid: 4,
   },
   {
-    name: "BS ENGLISH",
-    student: 23,
-    fees: 13,
+    BBAmarks: 77,
+    IMMC: 40,
+    IBA: 60,
+    Smarks: 88,
+    Sid: 5,
   },
 ];
 export default function Dashbord() {
@@ -184,92 +194,116 @@ export default function Dashbord() {
         <Grid container spacing={2}>
         <Grid item xs={12} md={4}>
           <div className="total-student">
-          <h4>Result</h4>
+          <h4>Year 1 IMMC</h4>
           <div>
             <ResponsiveContainer width="100%" height={150}>
               <BarChart  data={pdata}>
-              
-              <YAxis dataKey="student" interval={"preserveStartEnd"} />
-                <XAxis dataKey="name" interval={"preserveStartEnd"} />
+              <YAxis dataKey="Smarks" interval={"preserveStartEnd"} />
+                <XAxis dataKey="Sid" interval={"preserveStartEnd"} />
 
-                <Bar dataKey="student" fill="#E5E4E2" />
+                <Bar dataKey="BBAmarks" fill="green" />
+                <Bar dataKey="IMMC" fill="yellow" />
+                <Bar dataKey="IBA" fill="blue" />
               </BarChart>
               </ResponsiveContainer>
             </div>
           
           </div>
           <div className="total-program">
-            <ResponsiveContainer width="100%" height={100}>
-              <PieChart >
-                <Pie
-                  data={data}
-                  dataKey="uv"
-                  cx="50%"
-                  cy="50%"
-                  outerRadius={50}
-                  fill="#8884d8"
-                  stroke="white"
-                />
-              </PieChart>
-              </ResponsiveContainer>
-            <div className="text">
+          <div className="text">
               <p>Total Program</p>
               <h4>20</h4>
-            </div>           
+            </div>
+            <ResponsiveContainer width="100%" height={250}>
+              <PieChart >
+                <Pie data={data} dataKey="uv" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+          <Pie data={data} dataKey="pv" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+              </PieChart>
+              </ResponsiveContainer>
+                       
           </div>
         </Grid>
         <Grid item xs={12} md={8}>
           <div className="perfromance">
             <div className="perfromance-text">
-              <div className="p-leftside">
-                <h4>Class Attendance</h4>
-                <h5>This Week  Attendance Graph</h5>
-              </div>
-              <div className="p-rightside">
-              <span style={{color:'blue'}}><CircleIcon/></span> <li>This week</li>
-              <span style={{color:'	#7B68EE'}}><CircleIcon/></span> <li> last week</li>
-              </div>
+            
+                <h5>BIC BBA Year 1 Result-Trend Analysis</h5> 
             </div>
-            <div className="chart">
-              <ResponsiveContainer width="100%" height="100%" aspect={3}>
-                <LineChart data={pdata}>
-                  <XAxis dataKey="name" interval={"preserveStartEnd"} />
-                  <YAxis />
-                  <Line type="monotone" dataKey="student" stroke="red" />
-                  
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
+            
+            <ResponsiveContainer width="100%" height="100%" aspect={3}>
+            <LineChart  data={pdata}>
+            <CartesianGrid strokeDasharray="1 1" />
+              <XAxis dataKey="Sid" interval={"preserveStartEnd"} />
+              <YAxis dataKey='Smarks' />
+              <Line type="monotone" dataKey="BBAmarks" stroke="red" />
+              <Line type="monotone" dataKey="IMMC" stroke="yellow" />
+              <Line type="monotone" dataKey="IBA" stroke="green" />
+              
+            </LineChart>
+          </ResponsiveContainer>
+          <div className="camp">
+
+          <div className="main-total">
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#90ee90'}}><FamilyRestroomIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Total Campuses</p>
+        <h2>{count}</h2>
+        </div> 
+      </div>
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#ADD8E6'}}><GroupsIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Total Program</p>
+        <h2>{countT}</h2>
+        </div> 
+      </div>
+      </div>
+      <div className="main-total">
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#90ee90'}}><FamilyRestroomIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Position</p>
+        <h2>{count}</h2>
+        </div> 
+      </div>
+      <div className="new-total">
+      <Avatar style={{backgroundColor:'#ADD8E6'}}><GroupsIcon/></Avatar>
+        <div className="right-side-of-stundent">
+        <p>Certificate</p>
+        <h2>{countT}</h2>
+        </div> 
+      </div>
+      
+      </div>
+          </div>
+
+            
+
           </div>
         </Grid>
         <Grid item xs={12} md={8}>
           <div className="Market-Overview">
             <div className="market-text">
               <div className="market-left">
-                <h4>OUR COLLEGE SURVY</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <h4>BIC BBA Year 2 Result-Trend Analysis</h4>
               </div>
               <div className="market-right">
-                <Button>This month</Button>
+                <Button>This year</Button>
               </div>
             </div>
-            <div className="dolor">
-              <div className="dolor-left">
-                <h2>This year</h2>
-              </div>
-              <div className="dolor-right">
-              <span style={{color:'blue'}}><CircleIcon/></span> <li>This week</li>
-              <span style={{color:'	#7B68EE'}}><CircleIcon/></span> <li> last week</li>
-              </div>
-            </div>
-            <div >
-            <ResponsiveContainer width="100%"  height="150" aspect={3}>
-              <BarChart  data={data}>
-                <XAxis dataKey="college" />
-                <YAxis dataKey="uv" fill="black" />
-                <Bar dataKey="uv" fill="#8884d8" />
-              </BarChart>
-              </ResponsiveContainer>
+              <div >
+            <ResponsiveContainer width="100%" height="100%" aspect={3}>
+            <LineChart  data={pdata}>
+            <CartesianGrid strokeDasharray="1 1" />
+              <XAxis dataKey="Sid" interval={"preserveStartEnd"} />
+              <YAxis dataKey='Smarks' />
+              <Line type="monotone" dataKey="BBAmarks" stroke="red" />
+              <Line type="monotone" dataKey="IMMC" stroke="yellow" />
+              <Line type="monotone" dataKey="IBA" stroke="green" />
+              
+            </LineChart>
+          </ResponsiveContainer>
             </div>
           </div>
         </Grid>
@@ -326,60 +360,24 @@ export default function Dashbord() {
             </div>
           </div>
         </Grid>
-        <Grid item xs={12} md={8}>
-          <div className="request">
-            <div className="head">
-              <div className="head-left">
-                <h4>Pending Requests</h4>
-                <p>You have 50+ new requests</p>
-              </div>
-              <div className="head-right">
-                <Button variant="contained">
-                  {" "}
-                  <PersonIcon />
-                  Add new member
-                </Button>
-              </div>
-            </div>
-            <Tabel />
-          </div>
-        </Grid>
-        <Grid item xs={12} md={4}>
-    <div className="circul-chart">
-      <h4>Type By Amount</h4>
-      <div className="piegraph">
-        <PieChart width={100} height={177}>
-          <Pie
-            data={data}
-            dataKey="uv"
-            cx="50%"
-            cy="50%"
-            outerRadius={50}
-            fill="#8884d8"
-          />
-        </PieChart>
-      </div>
-      <ul>
-      <span style={{color:'red'}}><CircleIcon/></span> <li> Total</li>
-      <span style={{color:'blue'}}><CircleIcon/></span> <li>Net</li>
-      <span style={{color:'green'}}><CircleIcon/></span> <li>Gross</li>
-      <span style={{color:'pink'}}><CircleIcon/></span> <li>AVG</li>
-      </ul>
-    </div>
-  </Grid>
+        
   <Grid item xs={12} md={4}>
   <div className="Leave-Report">
     <div className="leave-head">
-      <h4>Leave Report</h4>
+      <h4>Year 2 -FQM</h4>
       <Button variant="contained">Month wise</Button>
     </div>
     <div>
     <ResponsiveContainer width="100%" height={300}>
-      <BarChart  data={pdata}>
-        <XAxis dataKey="name" interval={"preserveStartEnd"} />
+    <BarChart  data={pdata}>
+              
+    <YAxis dataKey="Smarks" interval={"preserveStartEnd"} />
+      <XAxis dataKey="Sid" interval={"preserveStartEnd"} />
 
-        <Bar dataKey="student" fill="#8884d8" />
-      </BarChart>
+      <Bar dataKey="BBAmarks" fill="green" />
+      <Bar dataKey="IMMC" fill="yellow" />
+      <Bar dataKey="IBA" fill="blue" />
+    </BarChart>
       </ResponsiveContainer>
     </div>
   </div>
@@ -451,41 +449,8 @@ export default function Dashbord() {
     </p>
     <p>1hr</p>
   </li>
-  <li className="line">
-    <p>
-      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-      task
-    </p>
-    <p>1hr</p>
-  </li>
-  <li className="line">
-    <p>
-      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-      task
-    </p>
-    <p>1hr</p>
-  </li>
-  <li className="line">
-    <p>
-      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-      task
-    </p>
-    <p>1hr</p>
-  </li>
-  <li className="line">
-    <p>
-      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-      task
-    </p>
-    <p>1hr</p>
-  </li>
-  <li className="line">
-    <p>
-      <span style={{ color: "blue" }}>Ben Tossell</span> assign you a
-      task
-    </p>
-    <p>1hr</p>
-  </li>
+  
+ 
   <a href="www.google.com">
     Show All <ArrowForwardIcon />
   </a>

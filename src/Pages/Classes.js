@@ -14,7 +14,7 @@ export default function Classes() {
     <div className='classes'>
     <div className='class-list'>
     <h4> Class List</h4>
-    <h2> Create New Class</h2>
+    <h3> Create New Class</h3>
     <Grid container spacing={2} >
     <Grid item xs={12} md={6} className='addclass'>First Name: 
     <Box

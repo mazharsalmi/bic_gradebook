@@ -67,7 +67,13 @@
 }
 @media (max-width:900px) {
     .classes{
-        margin-top: 0rem;
+        margin-top: auto;
+        padding-top: 1rem;
+    }
+    .classSelect{
+        flex-direction: column;
+        margin-left: 2rem;
+        margin-right: 4rem;
     }
     
 }

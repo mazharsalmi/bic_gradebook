@@ -16,6 +16,9 @@ import Teacher from "./Pages/Teacher"
 import UserGroup from "./Pages/UserGroup";
 import Exame from "./Pages/Exame";
 import StudentTime from "./Pages/StudentTime";
+import University from "./Pages/University";
+import OfferProgram from "./Pages/OfferProgram"
+import ClassList from "./Pages/ClassList"
 
 function App() {
   return (
@@ -28,7 +31,7 @@ function App() {
           <Route path="/" element={<Dashbord />} />
           <Route path="/grades" element={<Grades />} />
           <Route path="/prepare" element={<Prepare />} />
-          <Route path="/class" element={<Classes/>}/>
+          <Route path="/class" element={<ClassList/>}/>
           <Route path='/teachertiming' element={<Teacher/>}/>
           <Route path="/subjects" element={<Subject/>}/>
           <Route path="/menuassignation" element={<Prepare/>}/>
@@ -36,6 +39,8 @@ function App() {
           <Route path="/allusers" element={<Alluser/>}/>
           <Route path="/exam" element={<Exame/>}/>
           <Route path="/studenttiming" element={<StudentTime/>}/>
+          <Route path="/university" element={<University/>}/>
+          <Route path="/offerprogram" element={<OfferProgram/>}/>
           
           <Route path="/reporting" element={<Reporting />} />
         </Routes>

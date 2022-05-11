@@ -107,10 +107,14 @@ a{
     padding-left: 0%;
   
 }
+.menu-drop ul{
+    list-style-type: circle !important;
+    color: white; 
+}
 .menu-drop li{
     padding: 8px;
-margin-left: 5rem;    
-    
+margin-left: 4rem;
+
     
 }
 

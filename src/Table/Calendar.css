@@ -12,3 +12,9 @@
     align-items: center;
     text-align: center;
 }
+@media (max-width:900) {
+    .popup{
+       left: auto;
+       top: auto; 
+    }
+}
