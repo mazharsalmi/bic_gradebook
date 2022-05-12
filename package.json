@@ -1,6 +1,6 @@
 {
   "name": "BIC Gradebook & Timetable",
- "homepage": "http://thesocialcubes.com/bicgt",
+ "homepage": "http://thesocialcubes.com/bicgt/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
