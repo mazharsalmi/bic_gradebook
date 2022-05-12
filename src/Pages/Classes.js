@@ -1,5 +1,5 @@
 import { Button, Grid ,Select} from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "../Pages/Classes.css"
 import GradeEnter from "../Table/GradeEnter"
 import Box from '@mui/material/Box';
@@ -10,11 +10,14 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 export default function Classes() {
+  const [submit ,setSubmit] =useState(true);
+  const Submit =()=>{
+    setSubmit(false);
+
+  }
   return (
     <div className='classes'>
     <div className='class-list'>
-    <h4> Class List</h4>
-    <h3> Create New Class</h3>
     <Grid container spacing={2} >
     <Grid item xs={12} md={6} className='addclass'>First Name: 
     <Box

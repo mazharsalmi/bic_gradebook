@@ -1,6 +1,6 @@
 .classes{
     background-color: #f4f4f4;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     padding-bottom: 2rem;
     height: 100%;
     margin-top: 0rem;
@@ -9,8 +9,8 @@
 .class-list{
     background-color: white;
     border-radius: 5px;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    /* margin-left: 2rem;
+    margin-right: 2rem; */
     padding: 16px;
     margin-top: 1rem;
     

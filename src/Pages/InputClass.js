@@ -1,38 +1,18 @@
-import React, { useState } from 'react'
-import usergroup  from "../Pages/UserGroup.css"
+import React from 'react'
 import {Button, Divider, Grid } from '@mui/material';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ManageAccountsIcon from '@mui/icons-material/ManageAccounts';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
-import Classes from "./Classes";
-import { Link } from 'react-router-dom';
-import InputClass from './InputClass';
-
-
-
-export default function UserGroup() {
-  const [input, setInput]= useState(false);
-  const NewClass = ()=>{
-    setInput(!input);
-
-  }
-  const Submit =()=>{
-    setInput(false)
-  }
+export default function InputClass() {
   return (
-    <div className='usergroup'>
-    
+    <div>
     <Grid container   spacing={3} className='userData'>
     <Grid item xs={12} md={12}>
     <h3 style={{margin:'0%' ,fontSize:'18px' ,color:'#10101'}}>Class List</h3>
-    <Button className='btn-style' onClick={NewClass}>Add Class</Button>
+    <Button className='btn-style' >Add Class</Button>
     </Grid>
-    {input ?(<Grid item xs={3} md={12} >
-    <Classes/>
-    <Button className='btn-style' onClick={Submit}>Submit</Button></Grid>)
-    :null
-  }
+    
     <Grid item xs={3} md={1.7} className='tabelHeading'>
     <p>Class ID</p>
     </Grid>
@@ -176,7 +156,6 @@ export default function UserGroup() {
 
     
     </Grid>
-
     </div>
   )
 }

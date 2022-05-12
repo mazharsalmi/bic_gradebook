@@ -223,12 +223,11 @@ export default function SearchAppBar({ children }) {
         ""
       )}
 
-      <AppBar className="responsive-bar"  elevation={0}>
+      <AppBar className="responsive-bar" id="topbar"  elevation={0}>
         <Toolbar
-        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000,top:0, justifyContent:"space-between", paddingLeft:'0rem',
-      }}
-          className={color ? "responsive-bar header-bg" : "responsive-bar"}
-        >
+        id="topbaronclick"
+        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000,top:0, justifyContent:"space-between", paddingLeft:'0rem' }}
+          className={color ? "responsive-bar header-bg" : "responsive-bar"}>
           <Typography
             variant="h6"
             noWrap
@@ -251,10 +250,10 @@ export default function SearchAppBar({ children }) {
               aria-label="Default select example"
               className="select"
             >
-              <option selected>Select Category</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
+              <option selected>Select Campus</option>
+              <option value="1">University of Lahore</option>
+              <option value="2">University of London</option>
+              <option value="3">University of UK</option>
             </select>
             <div className="date">
               <Date />
