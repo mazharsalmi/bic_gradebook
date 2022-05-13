@@ -51,7 +51,7 @@ button.avc{
     font-size: 26px;
 }
 .total-student{
-    background-color: rgb(21, 18, 18) ;
+    background-color: #232227 ;
     border-radius: 5px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -118,7 +118,7 @@ font-size: 16px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color:  rgb(21, 18, 18);
+    background-color: #232227;
     border-radius: 5px;
     margin-top: 1rem;
     margin-left: 8px;
@@ -131,7 +131,7 @@ font-size: 16px;
 }
 
 .perfromance{
-    background-color: rgb(21, 18, 18);
+    background-color: #232227;
     border-radius: 5px;
     margin-left: 8px;
     margin-right: 8px;
@@ -197,7 +197,7 @@ font-size: 16px;
     
 }
 .Market-Overview{
-    background-color:rgb(21, 18, 18);
+    background-color:#232227;
     border-radius: 5px;
     padding: 24px;
     margin-left: 8px;
@@ -406,7 +406,7 @@ ul span{
     padding: 10px;
 }
 .Leave-Report{
-    background-color:  rgb(21, 18, 18);
+    background-color:  #232227;
     padding: 24px;
     border-radius: 5px;
     margin-right: 5px;
@@ -471,7 +471,7 @@ a {
     color: #1F3BB3;
 }
 .Activities{
-    background-color:  rgb(21, 18, 18);
+    background-color:  #232227;
     padding: 24px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;

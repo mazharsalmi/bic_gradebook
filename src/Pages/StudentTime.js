@@ -26,6 +26,7 @@ export default function StudentTime() {
               class="form-select"
               aria-label="Default select example"
               className="select"
+              id='select'
             >
               <option selected>Program</option>
               <option value="1">IT</option>
@@ -47,9 +48,10 @@ export default function StudentTime() {
               <option value="3">C</option>
             </select>
         </div>
-        <Button className='sort'>Select</Button>
+        <Button className='sort' id='sort'>Select</Button>
         </div>
-        <table className='timetable'>
+        <div style={{overflowX:'auto'}}>
+        <table className='timetable' >
         <tr id='border'>
         <th id='border'></th>
         <th id='border'>9AM TO 11AM</th>
@@ -132,7 +134,7 @@ export default function StudentTime() {
         <p>Room:4</p>
         <p>Sub:IT</p></div></td>
         </tr>
-        </table>
+        </table></div>
     </div>
   )
 }

@@ -71,7 +71,34 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 export default function SearchAppBar({ children }) {
   const [show, setShow] = useState(false);
   const [poss,setPoss]=useState(true)
- 
+  const [dropdown, setDropdown] = useState(false);
+  const [dropclass ,setDropclass]=useState(false);
+  const [dropsubject ,setDropsubject] =useState(false);
+  const [dropunilive, setDropunilive]=useState(false);
+  const ClickOnLink =()=>{
+    setDropdown(!dropdown);
+  }
+  const handleDropdown1 = () => {
+    setDropclass(!dropclass);
+    setDropdown(false);
+    setDropsubject(false);
+    setDropunilive(false);
+  };
+  const handleDropdown2 = () => {
+    setDropsubject(!dropsubject);
+    setDropdown(false);
+    setDropclass(false);
+    
+    setDropunilive(false);
+  };
+  const handleDropdown3 = () => {
+    setDropunilive(!dropunilive);
+    setDropdown(false);
+    setDropclass(false);
+    setDropsubject(false);
+    
+  };
+  
 
   const handleClicks = () => {
     setShow(!show);
@@ -106,7 +133,7 @@ export default function SearchAppBar({ children }) {
     <Box>
       {show ? (
         <div>
-          <div className="main" style={{ position: "relative" }}>
+          <div className="main" style={{ position: "relative"  }}>
             <motion.div
               animate={{ width: "220px" }}
               className="sidebar-mobile"
@@ -115,7 +142,7 @@ export default function SearchAppBar({ children }) {
                 right: "0",
                 top: "6.5rem",
                 zIndex: "99",
-                backgroundColor: "black",
+                
               }}
             >
               <div className="top_section1">
@@ -143,18 +170,40 @@ export default function SearchAppBar({ children }) {
                   </div>
                   <div className="link_text">Grades Entry</div>
                 </NavLink>
-                <NavLink to="/prepare" className="link" onClick={RemoveSidebar}>
-                  <div className="icon">
-                    <DateRangeIcon />
-                  </div>
-                  <div className="link_text">Prepare Result</div>
+                <div className="link" onClick={ClickOnLink}>
+                <div className="icon"><DateRangeIcon /></div>
+              <div className="link_text">Prepare Result</div>
+              </div>
+                {dropdown ? ( <ul className="menu-drop">
+                <li id="submenu">
+                <NavLink to="/prepare" className="dropdown" >
+                Campus Wise Result
                 </NavLink>
-                <NavLink to="/reporting" className="link">
-                  <div className="icon">
-                    <AutoGraphIcon />
-                  </div>
-                  <div className="link_text">Reporting</div>
+                </li>
+                <li id="submenu">
+                <NavLink to="/prepare" className="dropdown" >
+                Qualification Wise Result
                 </NavLink>
+                </li>
+                <li id="submenu">
+                <NavLink to="/prepare" className="dropdown" >
+                Class Wise Result
+                </NavLink>
+                </li>
+                <li id="submenu">
+                <NavLink to="/prepare" className="dropdown" >
+                Subject Wise Result
+                </NavLink>
+                </li>
+                <li id="submenu">
+                <NavLink to="/prepare" className="dropdown" >
+                Student Wise Result
+                </NavLink>
+                </li>
+                
+                  
+                </ul>):null
+              }
                 <div className="heading">TIMETABLE</div>
                 <NavLink to="/teachertiming" className="link link-teacher" onClick={RemoveSidebar}>
                   <div className="icon">
@@ -169,30 +218,62 @@ export default function SearchAppBar({ children }) {
                   <div className="link_text">Student Timetable</div>
                 </NavLink>
                 <div className="heading">SETUP</div>
-                <NavLink to="/class" className="link" onClick={RemoveSidebar}>
-                  <div className="icon">
+                <div className="link" onClick={handleDropdown1}>
+                   <div className="icon">
                     <PersonIcon />
-                  </div>
+                   </div>
                   <div className="link_text">Class</div>
-                </NavLink>
-                <NavLink to="/subjects" className="link" onClick={RemoveSidebar}>
-                  <div className="icon">
-                    <PersonIcon />
-                  </div>
-                  <div className="link_text">Subjects</div>
-                </NavLink>
+                </div>
+                {dropclass ?( <ul className="menu-drop ">
+                 <li id='submenu'>
+                 <NavLink to="/class" className="dropdown">
+                 Class list
+                 </NavLink>
+                 </li>
+                 </ul>):null
+                }
+                 <div className="link" onClick={handleDropdown2}>
+                 <div className="icon">
+                 <PersonIcon />
+               </div>
+               <div className="link_text">Subjects</div> 
+                </div>
+                {dropsubject ? (<ul className="menu-drop">
+                 <li id='submenu'>
+                 <NavLink to="/subjects" className="dropdown">
+                 Subject list
+                 </NavLink>
+                 </li>
+                 </ul>):null}
+                
                 <NavLink to="/exam" className="link" onClick={RemoveSidebar}>
                   <div className="icon">
                     <ListIcon />
                   </div>
                   <div className="link_text">Exams</div>
                 </NavLink>
-                <NavLink to="/unlivesities" className="link" onClick={RemoveSidebar}>
-                  <div className="icon">
-                    <PersonIcon />
-                  </div>
-                  <div className="link_text">Unlivesities</div>
-                </NavLink>
+                <div className="link" onClick={handleDropdown3}>
+                <div className="icon">
+                <PersonIcon />
+              </div>
+              <div className="link_text">Unlivesities</div>
+
+                </div>
+                {dropunilive ?(<ul
+                className="menu-drop"
+                  
+                >
+                <li id="submenu"><NavLink to="/offerprogram" className="dropdown">
+                Unlivesities list
+             </NavLink>
+             </li>
+             <li id="submenu"><NavLink to="/university" className="dropdown" >
+                Offer Program
+             </NavLink>
+             </li>
+                
+                </ul>):null}
+                
                 <div className="heading">ADMINISTRATION</div>
 
                 <NavLink to="/usergroup" className="link" onClick={RemoveSidebar}>

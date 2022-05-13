@@ -30,6 +30,7 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 1rem;
+    overflow-x: auto !important;
 }
 #border{
     border: 1px solid;
@@ -41,4 +42,20 @@
 }
 .data-in p{
     padding: 5px 0px 0px 0px;
+}
+@media (max-width:900px) {
+ .select-class{
+flex-direction: column;
+ }
+ #select{
+     margin-left: auto;
+ }
+ .label2{
+     margin-bottom: 1rem;
+ }   
+ #sort{
+     width: 5rem;
+     margin-left: auto !important;
+     margin-right: 1rem !important;
+ }   
 }

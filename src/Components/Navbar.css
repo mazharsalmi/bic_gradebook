@@ -147,9 +147,23 @@ select{
 }
 .scrolbar{
 }
+#submenu{
+    margin-left: 0%;
+ 
+}
+.sidebar-mobile{
+    
+    
+    background-color: #232227 !important; 
+
+}
 @media (max-width:900px) {
     .select-date{
         display: none;
+    }
+    #submenu{
+        margin-left: 0%;
+   
     }
     .left-side-navbar .aavatar{
         display: block;
@@ -203,6 +217,12 @@ select{
     .nav-right-icon{
         
         margin-right: 1rem;
+    }
+    
+}
+@media (min-width:900px) {
+    .sidebar-mobile{
+        display: none !important;
     }
     
 }

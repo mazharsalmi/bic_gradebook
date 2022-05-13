@@ -130,7 +130,23 @@ export default function Dashbord() {
   const [countT ,setCountT]=useState(0);
   const [countP ,setCountP]=useState(0);
   const [countD,setCountD]=useState(0);
+  const [countC ,setCountC]=useState(0);
+  const [countA ,setCountA]=useState(0);
+  const [countPP ,setCountPP]=useState(0);
+  const [countCC ,setCountCC]=useState(0);
   useEffect(() => {
+    if(countC<8){
+      setCountC(countC+1);
+    }
+    if(countA<5){
+      setCountA(countA+1);
+    }
+    if(countPP<39){
+      setCountPP(countPP+1);
+    }
+    if(countCC<27){
+      setCountCC(countCC+1);
+    }
     if(countD<19000){
       setCountD(countD+45);
     }
@@ -248,14 +264,14 @@ export default function Dashbord() {
       <Avatar style={{backgroundColor:'#90ee90'}}><FamilyRestroomIcon/></Avatar>
         <div className="right-side-of-stundent">
         <p>Total Campuses</p>
-        <h2>{count}</h2>
+        <h2>{countC}</h2>
         </div> 
       </div>
       <div className="new-total">
       <Avatar style={{backgroundColor:'#ADD8E6'}}><GroupsIcon/></Avatar>
         <div className="right-side-of-stundent">
-        <p>Total Program</p>
-        <h2>{countT}</h2>
+        <p>Total Affiliation</p>
+        <h2>{countA}</h2>
         </div> 
       </div>
       </div>
@@ -264,14 +280,14 @@ export default function Dashbord() {
       <Avatar style={{backgroundColor:'#90ee90'}}><FamilyRestroomIcon/></Avatar>
         <div className="right-side-of-stundent">
         <p>Position</p>
-        <h2>{count}</h2>
+        <h2>{countPP}</h2>
         </div> 
       </div>
       <div className="new-total">
       <Avatar style={{backgroundColor:'#ADD8E6'}}><GroupsIcon/></Avatar>
         <div className="right-side-of-stundent">
         <p>Certificate</p>
-        <h2>{countT}</h2>
+        <h2>{countCC}</h2>
         </div> 
       </div>
       
