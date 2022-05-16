@@ -1,5 +1,8 @@
 .table{
     margin-top: 6px;
+    flex-direction: column;
+    background-color: white;
+ 
 }
 .th{
     border-color: inherit;

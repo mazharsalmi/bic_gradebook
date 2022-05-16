@@ -77,7 +77,7 @@ label{
 }
 table{
     font-family: arial, sans-serif;
-
+    border-collapse: collapse;
     margin-top: 1rem;
     width: 100%;   
     }

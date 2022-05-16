@@ -9,9 +9,8 @@
     height: 97px;
     position: absolute;
     z-index: 100;
+    width: 100% !important;
     justify-content: space-between;
-
-    
 }
 .css-1hc7nu0-MuiPaper-root-MuiAppBar-root {
     /* position: relative!important;
@@ -28,10 +27,10 @@
   top: 0!important; 
   }  */
   .topbaronclick{
-      
-      left: 4!important;
+      background-color: red !important;
       top: 0!important;
       position: absolute!important;
+      
   }
   .MuiInput-underline{
     border-bottom: 0 !important;
@@ -172,8 +171,7 @@ select{
         display: none;
     }
     .responsive-bar{
-        width: 100%;
-    
+        width: 100%;    
     
     }
     .nav-right-icon{
@@ -191,6 +189,7 @@ select{
     .header-bg{
         justify-content: space-between !important;
     }
+    
 }
 .search{
         
@@ -200,15 +199,21 @@ select{
     .name-of-user{
         display: none;
     }
+    
+}
+@media (min-width:900px) and (max-width:2500px) {
+    
     .responsive-bar{
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between !important;
     }
     .nav-right-icon{
         margin-right: 18rem;
         margin-left: auto;
         }
-    
+        .sidebar-mobile{
+            display: none;
+        }    
 }
 @media (max-width:400px) {
     .left-side-navbar .aavatar{

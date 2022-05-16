@@ -176,27 +176,27 @@ export default function SearchAppBar({ children }) {
               </div>
                 {dropdown ? ( <ul className="menu-drop">
                 <li id="submenu">
-                <NavLink to="/prepare" className="dropdown" >
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveSidebar}>
                 Campus Wise Result
                 </NavLink>
                 </li>
                 <li id="submenu">
-                <NavLink to="/prepare" className="dropdown" >
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveSidebar}>
                 Qualification Wise Result
                 </NavLink>
                 </li>
                 <li id="submenu">
-                <NavLink to="/prepare" className="dropdown" >
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveSidebar}>
                 Class Wise Result
                 </NavLink>
                 </li>
                 <li id="submenu">
-                <NavLink to="/prepare" className="dropdown" >
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveSidebar}>
                 Subject Wise Result
                 </NavLink>
                 </li>
                 <li id="submenu">
-                <NavLink to="/prepare" className="dropdown" >
+                <NavLink to="/prepare" className="dropdown" onClick={RemoveSidebar} >
                 Student Wise Result
                 </NavLink>
                 </li>
@@ -226,7 +226,7 @@ export default function SearchAppBar({ children }) {
                 </div>
                 {dropclass ?( <ul className="menu-drop ">
                  <li id='submenu'>
-                 <NavLink to="/class" className="dropdown">
+                 <NavLink to="/class" className="dropdown" onClick={RemoveSidebar}>
                  Class list
                  </NavLink>
                  </li>
@@ -240,7 +240,7 @@ export default function SearchAppBar({ children }) {
                 </div>
                 {dropsubject ? (<ul className="menu-drop">
                  <li id='submenu'>
-                 <NavLink to="/subjects" className="dropdown">
+                 <NavLink to="/subjects" className="dropdown" onClick={RemoveSidebar}>
                  Subject list
                  </NavLink>
                  </li>
@@ -263,7 +263,7 @@ export default function SearchAppBar({ children }) {
                 className="menu-drop"
                   
                 >
-                <li id="submenu"><NavLink to="/offerprogram" className="dropdown">
+                <li id="submenu"><NavLink to="/offerprogram" className="dropdown" onClick={RemoveSidebar}>
                 Unlivesities list
              </NavLink>
              </li>

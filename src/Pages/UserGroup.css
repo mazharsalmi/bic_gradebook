@@ -3,12 +3,38 @@
     display: flex;
     justify-content: center;
     padding: 24px;
+    flex-direction: column;
     
-
-    
+}
+    .tablec{
+        margin-top: 6px;
+        flex-direction: column;
+        background-color: white;
+        border: 1px solid;
+        overflow-x: scroll auto;
+        display: flex;
+        overflow-x: auto;
+    }
+    .tablec th ,td{
+        border: 1px solid;
+    }
+.topList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-style{
+    width: auto;
 }
 .tabaleData{
     font-size: 0.812rem;
+}
+.classtable{
+    background-color: white;
+    border-radius: 5px;
+    flex-direction: column;
+    display: flex;
+    
 }
 .userData{
     background-color: white;
@@ -19,7 +45,6 @@
     align-items: center;
     padding: 0rem 1rem;
     font-size: 14px !important;
-    
 }
 .tabelHeading{
     font-size: 14px !important;
@@ -72,6 +97,7 @@
 .btn-style:hover{
     background-color: red!important;
 }
+
 
 @media (max-width:900px) {
     .userData{

@@ -685,6 +685,49 @@ li{
 
     }
 }
-@media (min-width:900px) and (max-width:2360px) {
+@media (min-width:1344px) and (max-width:1700px) {
+    .Leave-Report{
+        top: -12rem !important;
+       
+    }
+    .recent{
+        top: -12rem !important; 
+    }
+    .Activities{
+        top: 12rem;
+    }
     
+}
+@media (min-width:1700px) and (max-width:2000px){
+
+    .Leave-Report{
+        top: -9rem !important;
+       
+           }
+    .recent{
+        top: -9rem !important; 
+    }
+    .Activities{
+        top: -9rem;
+    }
+}
+@media (min-width:900px) and (max-width:1100px){
+    .Leave-Report{
+        top: -30rem !important;
+       
+          }
+    .recent{
+        top: -30rem !important; 
+    }
+    .Activities{
+        top: -19rem;
+    }   
+}
+@media (min-width:1100px) and (max-width:1400px){
+    .Leave-Report{
+        top: -17rem !important;
+         }
+    .recent{
+        top: -17rem !important; 
+    }
 }
