@@ -685,7 +685,67 @@ li{
 
     }
 }
-@media (min-width:1344px) and (max-width:1700px) {
+ @media (min-width:900px) and (max-width:1125px){
+     .Leave-Report{
+         margin-top: -14rem;
+
+     }
+     .recent{
+         margin-top: -14rem;
+     }
+ }
+ @media (min-width:1125px) and (max-width:1225px){
+     .Leave-Report{
+margin-top: -8rem !important;
+     }
+     .recent{
+        margin-top: -8rem !important;
+     }
+ }
+ @media (min-width:1550px) and (max-width:1700px){
+    .Leave-Report{
+margin-top: 3rem;
+    }
+    .recent{
+        margin-top: 3rem;
+    }
+}
+@media (min-width:1700px) and (max-width:1900px){
+    .Leave-Report{
+margin-top: 6rem;
+    }
+    .recent{
+        margin-top: 6rem;
+    }
+}
+@media (min-width:1900px) and (max-width:2100px){
+    .Leave-Report{
+margin-top: 8rem;
+    }
+    .recent{
+        margin-top: 8rem;
+    }
+}
+@media (min-width:2100px) and (max-width:2500px){
+    .Leave-Report{
+margin-top: 18rem;
+    }
+    .recent{
+        margin-top: 18rem;
+    }
+}
+@media (min-width:2500px) and (max-width:3500px){
+.Leave-Report{
+margin-top: 22rem;
+    }
+    .recent{
+        margin-top: 22rem;
+    }
+    .Activities{
+        margin-top: -8rem;
+    }
+}
+/* @media (min-width:1344px) and (max-width:1700px) {
     .Leave-Report{
         top: -12rem !important;
        
@@ -697,8 +757,8 @@ li{
         top: 12rem;
     }
     
-}
-@media (min-width:1700px) and (max-width:2000px){
+} */
+/* @media (min-width:1700px) and (max-width:2000px){
 
     .Leave-Report{
         top: -9rem !important;
@@ -710,8 +770,8 @@ li{
     .Activities{
         top: -9rem;
     }
-}
-@media (min-width:900px) and (max-width:1100px){
+} */
+/* @media (min-width:900px) and (max-width:1100px){
     .Leave-Report{
         top: -30rem !important;
        
@@ -730,4 +790,4 @@ li{
     .recent{
         top: -17rem !important; 
     }
-}
+} */
