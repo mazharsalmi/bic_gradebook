@@ -220,9 +220,3 @@ select{
     }
     
 }
-@media (min-width:900px) {
-    .sidebar-mobile{
-        display: none !important;
-    }
-    
-}

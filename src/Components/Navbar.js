@@ -307,7 +307,7 @@ export default function SearchAppBar({ children }) {
       <AppBar className="responsive-bar" id="topbar"  elevation={0}>
         <Toolbar
         id="topbaronclick"
-        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000,top:0, justifyContent:"space-between", paddingLeft:'0rem' }}
+        style={{ position: poss ? 'fixed' : 'relative',zIndex:10000,top:0, }}
           className={color ? "responsive-bar header-bg" : "responsive-bar"}>
           <Typography
             variant="h6"
