@@ -45,9 +45,26 @@
     display: flex;
     align-items: center;
 }
+.popup1{
+    position: fixed;
+    z-index: 999;
+    top: 10rem;
+    left: 45rem;
+    box-shadow: 2px black !important;
+    background-color: wheat;
+    border-radius: 10px;
+    width: 15rem !important;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 @media (max-width:900px) {
     .prepare{
         margin-top: 0rem;
+    }
+    .popup1{
+        left: 1.5rem;
     }   
     
 }

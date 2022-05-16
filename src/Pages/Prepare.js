@@ -2,8 +2,10 @@ import { Grid,Button, Divider } from '@mui/material'
 import React from 'react' 
 import perepare from "./Parepare.css"
 import { useState } from 'react';
+import { Modal } from 'antd';
 export default function Grades() {
   const [classData, setClassData] = useState(false);
+  const [isModalVisible, setIsModalVisible] = useState(false);
   const [data ,setData]=useState('');
   const ShowData =()=>{
     setClassData(!classData); }
@@ -59,6 +61,19 @@ export default function Grades() {
       setMyArray([]);
       setClassData(false);
     }
+    
+    const showModal = () => {
+      setIsModalVisible(!isModalVisible);
+    };
+  
+    const Okhandel = () => {
+      console.log("hello")
+      setIsModalVisible(false);
+    };
+  
+    const handleCancel = () => {
+      setIsModalVisible(false);
+    };
   return (
     <div className='grades'>
     <Grid container spacing={2}>
@@ -153,9 +168,14 @@ export default function Grades() {
               <td>
               {curElm.section} </td>
               <td >
-              <Button className='showresult'>View Result</Button></td>
-              
-            
+              <Button className='showresult' onClick={showModal}>View Result</Button>
+              {isModalVisible ?(    <Modal title="Basic Modal" visible={isModalVisible} onOk={Okhandel} onCancel={handleCancel} className='popup1'>
+    <p>Class: F16BS IT2016</p>
+    <p>Congratulations</p>
+    <p>You are Pass</p>
+    <p>Your SGPA :3.4</p>
+      </Modal>):("")}
+      </td>
               </tr>
               
             })}

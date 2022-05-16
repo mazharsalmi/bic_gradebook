@@ -12,9 +12,10 @@
     align-items: center;
     text-align: center;
 }
-@media (max-width:900) {
+@media (max-width:900px) {
     .popup{
-       left: auto;
-       top: auto; 
+        left: 1.5rem !important;
+
+       background-color: red;
     }
 }
