@@ -194,16 +194,16 @@ export default function Dashbord() {
       </div>
       <div className="new-total">
       <Avatar style={{backgroundColor:'#ffcccb '}}><SupervisorAccountIcon/></Avatar>
-        <div className="right-side-of-stundent" id="par">
+        <div className="right-side-of-stundent">
         <p>Parents</p>
         <h2>{countP}</h2>
         </div> 
       </div>
       <div className="new-total">
       <Avatar style={{backgroundColor:'#D3D3D3'}}><LocalAtmIcon/></Avatar>
-        <div className="right-side-of-stundent" id="par">
-        <p>Expense</p>
-        <h2><span style={{color:'red'}}>$</span>{countD}</h2>
+        <div className="right-side-of-stundent">
+        <p id="par">Expense</p>
+        <h2 id="par1"><span style={{color:'red'}}>$</span>{countD}</h2>
         </div> 
       </div></div>
       

@@ -675,10 +675,18 @@ li{
 .right-side-of-stundent{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    
+    align-items: flex-end;
+    
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
 }
+
 #par{
-    margin-right: 2rem;}
+    margin-left: 2rem;}
+    #par{
+        margin-left: auto;
+    }
     .Activities{
         top: -20rem !important;
 
