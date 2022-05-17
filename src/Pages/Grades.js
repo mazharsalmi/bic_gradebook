@@ -163,7 +163,7 @@ export default function Grades() {
               </tr>
               
             })}
-            <button className='submit' onClick={RemoveArry}>submit</button>
+            <button className='submit sort' onClick={RemoveArry}>submit</button>
             </table>
             ):
             ("")

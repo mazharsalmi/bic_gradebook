@@ -32,8 +32,8 @@ label{
     margin-bottom: 4rem;
 }
 .sort{
-    background-color: #51B1E1 !important;
-    padding: 8px !important;
+    background-color: #23272b !important;
+    padding: 6px 8px  !important;
     margin-left: 5px !important;
     color: white !important;
     border-radius: 8px !important;
@@ -98,15 +98,14 @@ table th{
         
         position: absolute;
         right: 9.5rem;
-        background-color: #51B1E1 !important;
-    padding: 8px !important;
+    margin-top: 2.5rem;
+    background-color: #23272b !important;
+    padding: 6px 8px  !important;
     margin-left: 5px !important;
     color: white !important;
     border-radius: 8px !important;
     font-size: small !important;
-    font-weight: 200 !important;
-    margin-top: 2.5rem;
-        
+    font-weight: 200 !important; 
     }
 
     .commit{

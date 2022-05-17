@@ -25,11 +25,11 @@ export default function UserGroup() {
     <div className='usergroup'>
     <div className='topList'>
     <h3 style={{margin:'0%' ,fontSize:'18px' ,color:'#10101'}}>University List</h3>
-    <Button className='btn-style' onClick={NewClass}>Add University</Button></div>
+    <Button className='sort' onClick={NewClass}>Add University</Button></div>
     <table className='table'>
     {input ?(<Grid item xs={3} md={12} >
     <Classes/>
-    <Button className='btn-style' onClick={Submit}>Submit</Button></Grid>)
+    <Button className='sort' onClick={Submit}>Submit</Button></Grid>)
     :null
   }
   <table>
